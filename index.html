@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><!-- MATCHDAY 26: Original independent football game. Embedded Three.js r160 (MIT, copyright Three.js authors). No affiliation with Electronic Arts. --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATCHDAY 26 — The beautiful game</title><script defer src="https://cdn.vercel-insights.com/v1/script.js"></script><style>
+<!doctype html><html lang="en"><head><!-- MATCHDAY 26: Original independent football game. Embedded Three.js r160 (MIT, copyright Three.js authors). No affiliation with Electronic Arts. --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>MATCHDAY 26 — The beautiful game</title><style>
 :root{--lime:#b8f36d;--paper:#f1f3eb;--ink:#111916;--dim:#9ba8a2;--line:#ffffff20}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#111916;color:var(--paper);font:14px Arial,Helvetica,sans-serif}button,select,input{font:inherit}button,select{cursor:pointer}button{border:0}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--lime);outline-offset:4px}#game{position:fixed;inset:0;width:100%;height:100%;display:block}#vignette{position:fixed;inset:0;pointer-events:none;background:linear-gradient(0deg,#05110f42,transparent 25%,transparent 75%,#07131445)}.hidden{display:none!important}.screen{position:fixed;inset:0}.eyebrow{font-size:11px;letter-spacing:3px;font-weight:700;text-transform:uppercase;color:var(--lime)}.display{font-family:Impact,'Arial Narrow',Arial,sans-serif;font-stretch:condensed;font-weight:900;letter-spacing:-1px;text-transform:uppercase}.topline{position:absolute;top:30px;left:44px;right:44px;display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;font-weight:900;letter-spacing:-1px;font-size:24px}.brand i{font-size:12px;background:var(--lime);color:var(--ink);padding:6px 7px;margin-right:10px;clip-path:polygon(0 0,100% 0,100% 75%,75% 100%,0 100%);font-style:normal;letter-spacing:0}.offline{display:flex;align-items:center;gap:8px;color:#bfc9c4;font-size:10px;letter-spacing:2px}.offline:before{content:'';width:6px;height:6px;border-radius:50%;background:var(--lime)}
 #menu{background:linear-gradient(90deg,#0a1314 0%,#0a1314f0 28%,#0a13147a 49%,#08121308 74%)}.menu-content{position:absolute;left:clamp(30px,4.4vw,78px);top:15%;width:min(480px,43vw)}h1{font-size:clamp(58px,7.2vw,104px);line-height:.87;margin:20px 0 17px}h1 span{color:var(--lime)}.intro{color:#adb9b3;font-size:12px;line-height:1.7;max-width:355px;margin:0 0 22px}.section-label{font-size:10px;letter-spacing:2px;color:#8c9d94;text-transform:uppercase;font-weight:bold;margin-bottom:10px}.matchup{display:flex;align-items:center;gap:16px;margin-bottom:17px}.crest{width:43px;height:48px;background:#007c80;border:2px solid #eff6e999;clip-path:polygon(0 0,100% 0,100% 68%,50% 100%,0 68%);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:15px;letter-spacing:-1px;padding-bottom:5px}.versus{font-size:11px;color:#82978b;letter-spacing:1px}.team-choice{display:flex;align-items:center;gap:10px}.team-choice select{background:transparent;border:0;border-bottom:1px solid #ffffff30;color:var(--paper);padding:7px 0;width:129px;font-size:12px;font-weight:700}.team-choice option,select option{background:#1b2823;color:white}.settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 19px;margin-bottom:13px}.field label{display:block;font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#99ada0;margin-bottom:5px}.field select{width:100%;padding:9px 10px;background:#ffffff08;color:var(--paper);border:1px solid #ffffff1c;border-radius:0;font-size:12px}.field select:hover{border-color:#b8f36d90}.primary{background:var(--lime);color:#142016;font-weight:900;text-transform:uppercase;letter-spacing:1px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:30px;width:100%;transition:background 150ms,transform 100ms;clip-path:polygon(0 0,100% 0,100% 75%,97% 100%,0 100%)}.primary:hover{background:#d4ffa3}.primary:active{transform:translateY(2px)}.primary kbd{background:#14201618;color:#142016;border-color:#14201640;font-size:9px}.sub-actions{display:flex;gap:20px;margin-top:17px}.text-button{background:transparent;color:#bac8c0;font-size:10px;text-transform:uppercase;letter-spacing:1.5px;padding:6px 0;border-bottom:1px solid transparent}.text-button:hover{color:var(--lime);border-color:var(--lime)}.menu-bottom{position:absolute;bottom:25px;left:44px;right:44px;display:flex;justify-content:space-between;font-size:9px;color:#8f9e96;letter-spacing:1.5px}.hero-label{position:absolute;right:6%;bottom:12%;text-align:right}.hero-label .display{font-size:38px;line-height:1}.hero-label p{color:#b5c3bb;font-size:10px;letter-spacing:2px}.hero-label .stripe{display:inline-block;background:var(--lime);width:72px;height:4px;margin-bottom:15px}
 kbd{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:22px;padding:2px 6px;border:1px solid #a5b8ac60;border-bottom-width:2px;border-radius:3px;background:#ffffff0d;color:#edf3ec;font:10px Arial}.hud{position:fixed;inset:0;pointer-events:none}#scoreboard{position:absolute;top:30px;left:35px;box-shadow:0 4px 20px #0002;min-width:280px}.score-top{display:flex;align-items:center;height:45px;background:#101b19f2;border-bottom:3px solid var(--lime)}.score-top .abbr{width:63px;text-align:center;font-size:13px;font-weight:800;letter-spacing:1px}.swatch{width:4px;height:22px;background:#007c80}.score{font-size:24px;font-weight:900;min-width:64px;text-align:center;background:var(--lime);color:#132117;height:42px;line-height:42px}.score-bottom{background:#f1f3eb;color:#1e2d24;display:flex;justify-content:space-between;align-items:center;padding:5px 12px;font-size:10px;font-weight:800}.score-bottom span:last-child{letter-spacing:1.5px;font-size:8px}.broadcast{position:absolute;right:36px;top:32px;text-align:right;color:#ffffffa0;font-size:10px;font-weight:900;letter-spacing:3px}.broadcast strong{font-size:24px;color:#ffffffb5;letter-spacing:-1px}.broadcast b{display:inline-block;margin-top:4px;border:1px solid #ffffff70;font-size:9px;letter-spacing:2px;padding:2px 5px}.playerbar{position:absolute;bottom:32px;left:35px;width:236px;background:#101c1adc;padding:12px 15px 10px;border-left:4px solid var(--lime)}.playerbar.away{left:auto;right:35px;text-align:right;border-left:0;border-right:4px solid #dfe5ce}.player-info{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.8px;font-size:12px}.away .player-info{justify-content:flex-end}.pnumber{color:var(--lime);font-size:19px}.role{font-size:8px;letter-spacing:1.4px;color:#92aa9b;margin-top:4px}.stamina{height:3px;background:#ffffff20;margin-top:10px}.stamina i{display:block;background:var(--lime);height:100%;width:100%;transition:width .2s linear}#power{height:5px;background:#ffffff25;margin-top:8px;overflow:hidden}#power i{display:block;background:var(--lime);height:100%;width:0}#radar{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);width:212px;height:138px;opacity:.8}#hint{position:absolute;left:50%;bottom:175px;transform:translateX(-50%);padding:9px 15px;background:#0c181bc9;white-space:nowrap;font-size:10px;color:#d2ded5;transition:opacity .4s}#hint kbd{margin:0 3px;height:19px;min-width:19px}.center-banner{position:absolute;left:50%;top:20%;transform:translateX(-50%);min-width:260px;text-align:center;background:#10211beb;border-top:3px solid var(--lime);padding:14px 28px}.center-banner .display{font-size:27px}.center-banner small{display:block;color:#b8c8bd;font-size:10px;margin-top:7px;letter-spacing:.8px}#event{position:absolute;left:50%;top:38%;transform:translateX(-50%);text-align:center;pointer-events:none}#event h2{font-size:80px;color:var(--lime);margin:0;line-height:1;text-shadow:0 4px 30px #0008}#event p{background:#0c1c18df;padding:8px 20px;font-size:12px;letter-spacing:2px;margin:10px 0}#replaytag{position:absolute;top:100px;left:35px;color:var(--lime);font-size:10px;letter-spacing:3px;background:#10201cdd;padding:7px 10px}#performance{position:absolute;right:35px;top:100px;color:#a8c1b0;font-size:9px;letter-spacing:1px}#toast{position:fixed;left:50%;top:110px;transform:translateX(-50%);background:#101e18ee;border-left:3px solid var(--lime);padding:10px 20px;font-size:11px;z-index:20;pointer-events:none}
@@ -23,6 +23,359 @@ body.ref-mode .playerbar{display:none}body.ref-mode .score{background:#f6df57}bo
 @media(max-width:1000px){.ref-incident{right:15px;width:280px}.ref-fitness{left:20px;width:210px}.ref-control{right:20px;width:210px}.ref-role{left:20px}.ref-var{width:48vw}.var-transport{gap:7px}.var-transport>button{padding:7px 5px}.var-angles button{font-size:7px}}
 .var-toggle,.var-restore{color:#f6df57;border:1px solid #f6df5777;background:#13271ff5;font-size:9px;padding:9px 11px;white-space:nowrap}.var-toggle:hover,.var-restore:hover{background:#f6df57;color:#142119}.var-restore{position:fixed;left:30px;bottom:30px;z-index:7;box-shadow:0 5px 25px #0005}.ref-var-head{gap:12px}.ref-var-head .eyebrow{flex:1}
 .binding-toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:14px}.binding-toolbar [role=tablist]{display:flex;gap:6px}.binding-toolbar [role=tab]{background:#ffffff08;color:#a9bfb0;border:1px solid #ffffff20;padding:10px 14px;font-size:10px}.binding-toolbar [role=tab].active{background:#b8f36d;color:#162318}.binding-toolbar .secondary{font-size:9px;padding:10px}.binding-help{font-size:11px;color:#a5bbad;line-height:1.7;margin:10px 0}.binding-status{font-size:11px;color:#b8f36d;min-height:20px;margin:10px 0 13px}.binding-error{color:#f0a47f}.binding-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 25px}.binding-row{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #ffffff12;padding:11px 0}.binding-row b{font-size:11px;font-weight:500;color:#d6e3da}.binding-row small{display:block;color:#809a89;font-size:9px;margin-top:5px}.binding-slots{display:flex;gap:5px}.binding-key{min-width:48px;max-width:85px;min-height:32px;background:#1c3026;border:1px solid #ffffff35;color:#edf4e9;font-family:monospace;font-size:11px;padding:6px}.binding-key:hover,.binding-key:focus-visible{border-color:#b8f36d;color:#b8f36d}.binding-key.listening{background:#b8f36d;color:#172219;border-color:#b8f36d}@media(max-width:760px){.binding-grid{grid-template-columns:1fr}.binding-toolbar{flex-wrap:wrap}}
+.team-panel{width:min(1120px,95vw);padding:25px 30px}.team-panel h2{font-size:38px;margin:8px 0 18px}.team-toolbar{display:flex;align-items:center;gap:20px;border-bottom:1px solid #ffffff20;padding-bottom:13px}.team-tabs{display:flex;gap:5px}.team-tabs button{background:#ffffff09;color:#a9c0b0;border:1px solid #ffffff20;font-size:10px;padding:9px 15px}.team-tabs button.active{background:var(--lime);color:#172119}.team-toolbar label{display:flex;gap:10px;align-items:center;font-size:9px;color:#a9c0b0}.team-toolbar select{background:#20362b;border:1px solid #ffffff25;color:white;padding:8px 10px;font-size:11px}.team-toolbar>span{margin-left:auto;color:var(--lime);font-size:10px;letter-spacing:.5px}.team-status{font-size:11px;color:#b8d7b7;line-height:1.6;margin:11px 0 14px;min-height:18px}.team-error{color:#f4a07d}.team-management-layout{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,1fr);gap:25px}.team-section-heading{display:flex;justify-content:space-between;gap:15px;font-size:10px;color:#d8e8da;margin-bottom:12px}.team-section-heading span{font-size:8px;color:#809c8b;align-self:center}.management-pitch{position:relative;height:470px;border:1px solid #bed9b255;background:repeating-linear-gradient(0deg,#244b35 0px,#244b35 58px,#284f38 58px,#284f38 116px);overflow:hidden}.management-pitch:before{content:'';position:absolute;left:5%;right:5%;top:50%;height:1px;background:#bed9b244}.management-pitch:after{content:'';position:absolute;inset:4%;border:1px solid #bed9b244;pointer-events:none}.management-center{position:absolute;left:50%;top:50%;width:86px;height:86px;transform:translate(-50%,-50%);border:1px solid #bed9b244;border-radius:50%}.management-box{position:absolute;left:24%;right:24%;height:14%;border:1px solid #bed9b244}.management-box.top{top:4%;border-top:0}.management-box.bottom{bottom:4%;border-bottom:0}.team-position{position:absolute;transform:translate(-50%,-50%);z-index:1}.team-player{display:flex;flex-direction:column;align-items:center;justify-content:center;width:89px;min-height:66px;padding:5px 4px;background:#122b22e8;color:#edf3e7;border:1px solid #769d7380;border-radius:3px;cursor:grab;user-select:none;box-shadow:0 3px 8px #0003}.team-player:active{cursor:grabbing}.team-shirt{font-size:18px;font-weight:800;color:#c5f18a;line-height:1.1}.team-player>b{font-size:9px;line-height:1.3;margin-top:4px;max-width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.team-player>small{font-size:7px;color:#a4bba9;margin-top:3px}.team-player>em{font-style:normal;font-size:7px;line-height:1.4;color:#f6df57;margin-top:3px}.team-fitness{display:block;width:70%;height:2px;background:#ffffff16;margin-top:5px}.team-fitness span{display:block;height:100%;background:var(--lime)}.team-player.pending{border-color:#f6df57}.team-player.chosen,.team-player.team-drop,.team-player:focus-visible{outline:2px solid var(--lime);outline-offset:2px;background:#2d4e32}.team-player.dismissed{opacity:.5;border-color:#df665c;cursor:default}.team-player.dismissed .team-shirt{color:#df665c}.team-bench{display:grid;grid-template-columns:1fr 1fr;gap:9px}.reserve-player{width:100%;min-height:88px}.reserve-player .team-shirt{font-size:21px}.reserve-player>b{font-size:11px}.reserve-player>small{font-size:9px}.team-instructions{font-size:9px;color:#8eae99;line-height:1.7;margin:10px 0 0}.queue-heading{margin-top:22px}.pending-sub{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #ffffff12;font-size:9px;line-height:1.6}.pending-sub span,.pending-sub small{display:block}.pending-sub small{color:#829e8d}.pending-sub button{background:#ffffff0b;color:#c6d7c9;border:1px solid #ffffff25;font-size:20px;min-width:27px;height:27px}.sub-out{color:#f1958a}.sub-in{color:#b8f36d}.team-empty{font-size:10px;color:#88a391;line-height:1.8}.team-history{font-size:9px;color:#8da995;padding:9px 0;border-bottom:1px solid #ffffff0c}.team-history span{display:block;margin-top:3px}.team-management-footer{display:flex;gap:25px;align-items:center;margin-top:15px;border-top:1px solid #ffffff16;padding-top:15px}.team-management-footer p{font-size:9px;line-height:1.7;color:#87a08f;margin:0;flex:1}.team-management-footer button{width:160px;font-size:11px;padding:13px 18px}.sub-board{position:fixed;top:115px;right:35px;z-index:4;width:305px;background:#0d201aef;border-top:2px solid var(--lime);padding:13px 16px;box-shadow:0 6px 25px #0004}.sub-board-head{display:flex;justify-content:space-between;gap:10px;font-size:9px;letter-spacing:.5px;margin-bottom:12px}.sub-board-head span{font-size:8px;color:#92ad9d;text-align:right}.sub-board-line{display:flex;align-items:center;gap:13px;padding:7px 0}.sub-board-line>span{min-width:40px;font-size:10px;font-weight:800}.sub-board-line strong{font-size:12px;font-weight:600}@media(max-width:850px){.team-management-layout{grid-template-columns:1fr}.management-pitch{height:440px}.team-toolbar{flex-wrap:wrap}.team-toolbar>span{margin-left:0}.team-bench{grid-template-columns:repeat(4,1fr)}.team-panel{padding:20px}.team-player{width:78px}.reserve-player{width:100%}.sub-board{right:18px;width:280px}}@media(max-height:760px) and (min-width:851px){.management-pitch{height:385px}.team-player{min-height:58px}.team-panel h2{font-size:31px;margin-bottom:12px}.team-panel{padding:20px 25px}.team-status{margin:8px 0 10px}.reserve-player{min-height:78px}}
+.team-player{touch-action:none}.team-drag-ghost{position:fixed!important;z-index:100;pointer-events:none;transform:translate(-50%,-50%) rotate(-3deg);width:95px!important;opacity:.9;box-shadow:0 10px 30px #0008}
+.touch-controls{display:none;position:fixed;inset:0;pointer-events:none;z-index:5}
+.mobile .touch-controls{display:block}
+.touch-topbar{position:absolute;right:max(10px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));display:flex;gap:6px;pointer-events:auto}
+.touch-topbar button{width:40px;height:35px;color:#edf4e8;background:#10271ed9;border:1px solid #ffffff40;font-size:19px;border-radius:6px;touch-action:none}
+.touch-stick{position:absolute;left:max(16px,env(safe-area-inset-left));bottom:max(16px,env(safe-area-inset-bottom));width:116px;height:116px;border:1px solid #ddf1dd69;border-radius:50%;background:#12302552;box-shadow:inset 0 0 0 18px #ffffff07;pointer-events:auto;touch-action:none}
+.touch-stick:before{content:'MOVE';position:absolute;top:14px;left:0;right:0;text-align:center;color:#d5e8d0a0;font-size:8px;letter-spacing:1px}
+.touch-knob{position:absolute;left:50%;top:50%;width:46px;height:46px;border-radius:50%;transform:translate(-50%,-50%);background:#c7edada8;border:1px solid #edffeab3;box-shadow:0 3px 15px #0003;pointer-events:none}
+.touch-actions{position:absolute;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));width:199px;pointer-events:auto}
+.touch-action-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.touch-actions button{height:43px;min-width:44px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:2px;padding:4px;background:#112c22bf;border:1px solid #e5f7d859;border-radius:9px;color:#edf8e9;font-size:9px;font-weight:700;touch-action:none;user-select:none;-webkit-user-select:none;box-shadow:0 2px 8px #0002}
+.touch-actions button small{font-size:6px;color:#b8d2b3;font-weight:400;line-height:1}
+.touch-actions button.primary-touch{background:#b8f36dc9;color:#172818;border-color:#deffc7}
+.touch-actions button.primary-touch small{color:#35532c}
+.touch-actions button.pressed,.touch-topbar button.pressed{background:#d4f9a8;color:#142017;border-color:#ebffcd}
+.touch-actions button.toggled{border-color:#ddffa1;background:#8dbd5499;color:white}
+.touch-aux{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:6px}
+.touch-aux button{height:31px;font-size:8px;border-radius:6px}
+.touch-more{display:flex;gap:6px;position:absolute;right:0;bottom:125px;padding:6px;background:#0f211cef;border:1px solid #ffffff30;border-radius:7px}
+.touch-more button{min-width:75px;height:35px;font-size:8px}
+.touch-ref-grid{grid-template-columns:repeat(3,1fr)}
+.touch-ref-grid button{height:39px}
+.touch-ref-grid .whistle-touch{background:#f6df57d9;color:#182219;border-color:#fff1ab}
+.touch-ref-grid .wide-touch{grid-column:span 2}
+.rotate-screen{position:fixed;inset:0;z-index:80;background:#0c1d18f8;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px}
+.rotate-content{max-width:340px}
+.rotate-content h2{font-size:29px;margin:20px 0 12px}
+.rotate-content p{font-size:12px;line-height:1.8;color:#a8bcae;margin:12px 0 24px}
+.rotate-content button{margin:auto;width:230px;padding:14px 18px}
+.rotate-phone-icon{width:40px;height:70px;border:3px solid #c5f18a;border-radius:8px;margin:auto;transform:rotate(-90deg);box-shadow:0 0 0 9px #b8f36d08;position:relative}
+.rotate-phone-icon:after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);height:3px;width:14px;border-radius:3px;background:#c5f18a}
+.touch-guide{font-size:12px;line-height:1.8;color:#b4cdb9}
+.touch-guide b{color:#d7efbf}
+.touch-guide p{margin:12px 0}
+.mobile{height:100dvh;overscroll-behavior:none;-webkit-text-size-adjust:100%}
+.mobile #game{touch-action:none}
+.mobile button{touch-action:manipulation}
+.mobile .touch-actions button,.mobile .touch-topbar button{touch-action:none}
+.mobile .screen{height:100dvh}
+.mobile .overlay{backdrop-filter:blur(3px)}
+.mobile .panel{width:96vw;max-height:94dvh;padding:15px 20px;overscroll-behavior:contain}
+.mobile .panel h2{font-size:26px;margin:8px 0 16px}
+.mobile .close{width:36px;height:32px}
+.mobile .panel .notes{font-size:9px;line-height:1.7;margin-top:12px}
+.mobile select{font-size:16px!important}
+.mobile #controls .binding-toolbar,.mobile #controls .binding-help,.mobile #controls .binding-status,.mobile #controls .binding-grid{display:none}
+.mobile #controls .notes{display:none}
+.mobile #hint{display:none!important}
+.mobile .topline{left:max(18px,env(safe-area-inset-left));right:max(18px,env(safe-area-inset-right));top:12px}
+.mobile .topline .brand{font-size:14px}
+.mobile .topline .brand i{width:24px;height:24px;font-size:10px}
+.mobile .topline .offline{font-size:7px;letter-spacing:1px;display:block}
+.mobile .menu-content{left:max(24px,env(safe-area-inset-left));top:17%;width:48vw;max-width:420px}
+.mobile .menu-content .eyebrow{font-size:8px;letter-spacing:2px}
+.mobile h1{font-size:36px;line-height:1;margin:13px 0}
+.mobile .intro{font-size:9px;line-height:1.6;max-width:300px}
+.mobile .main-buttons{margin-top:14px;gap:7px;max-width:290px}
+.mobile .main-action{min-height:35px;padding:10px 15px;font-size:11px}
+.mobile .menu-bottom{left:24px;right:24px;bottom:10px;font-size:6px;letter-spacing:.7px}
+.mobile .hero-label{display:none}
+.mobile .selection-screen{padding:12px max(16px,env(safe-area-inset-left));overflow:auto}
+.mobile .selection-top{margin-bottom:10px}
+.mobile .selection-top h2{font-size:24px;margin:4px 0 0}
+.mobile .selection-top .eyebrow{font-size:8px}
+.mobile .selection-back{font-size:9px;padding:10px}
+.mobile .team-columns{gap:25px;max-width:900px}
+.mobile .club-panel{border-width:1px}
+.mobile .club-panel header{padding:7px 10px}
+.mobile .club-panel header h3{font-size:17px;margin:0 0 4px}
+.mobile .club-panel header span{font-size:8px}
+.mobile .club-scroll{max-height:calc(100dvh - 144px);min-height:0}
+.mobile .club-row{min-height:32px;padding:4px 12px;font-size:10px}
+.mobile .club-row img{width:24px;height:24px}
+.mobile .club-row em{font-size:7px}
+.mobile .club-detail{padding:10px 12px}
+.mobile .club-detail h4{font-size:19px;margin:0 0 8px}
+.mobile .club-badge-large{width:70px;height:80px}
+.mobile .club-detail-layout{gap:15px;grid-template-columns:76px 1fr}
+.mobile .team-rating{margin-bottom:6px}
+.mobile .team-rating div{font-size:9px}
+.mobile .team-rating .bar{height:6px}
+.mobile .team-stars{font-size:19px;margin-top:5px}
+.mobile .ratings-caption{font-size:6px}
+.mobile .club-panel footer button{min-height:32px;padding:8px;font-size:10px}
+.mobile .selection-note{margin:7px 0 0;font-size:7px;line-height:1.4}
+.mobile .confirmed-label{font-size:9px;padding:7px}
+.mobile .club-placeholder{min-height:140px}
+.mobile .club-placeholder b{font-size:55px}
+.mobile .preparation-screen{padding:12px max(18px,env(safe-area-inset-left))}
+.mobile .prep-heading{margin-bottom:12px}
+.mobile .prep-heading h2{font-size:26px;margin:5px 0 0}
+.mobile .prep-heading .eyebrow{font-size:8px}
+.mobile .prep-back,.mobile .text-button{font-size:8px}
+.mobile .prep-layout{grid-template-columns:minmax(230px,.9fr) minmax(300px,1.1fr);gap:20px}
+.mobile .prep-club img{width:35px;height:38px}
+.mobile .prep-club b{font-size:12px}
+.mobile .prep-club small{font-size:7px}
+.mobile .prep-matchup{padding-bottom:12px;margin-bottom:12px;gap:12px}
+.mobile .settings-grid{gap:10px}
+.mobile .field label{font-size:8px;margin-bottom:4px}
+.mobile .field select{padding:6px 8px}
+.mobile .prep-detail{font-size:8px;margin:9px 0}
+.mobile .kickoff{font-size:11px;padding:12px 15px}
+.mobile #prepModeNote{font-size:8px;margin-top:8px}
+.mobile .prep-lineup{padding:12px}
+.mobile .lineup-heading{margin-bottom:10px}
+.mobile .lineup-heading h3{font-size:12px}
+.mobile .lineup-heading span{font-size:10px}
+.mobile .lineup-content{grid-template-columns:minmax(110px,.9fr) minmax(130px,1fr);gap:10px}
+.mobile .formation-board{min-height:210px}
+.mobile .formation-player{font-size:6px;max-width:52px}
+.mobile .formation-player b{font-size:9px;padding:4px;width:21px;height:21px}
+.mobile .roster-wrap{max-height:235px;overflow:auto}
+.mobile .roster-tabs button{font-size:7px;padding:7px 3px}
+.mobile .squad-player{font-size:8px;padding:5px 0;gap:5px}
+.mobile .squad-player em{font-size:7px}
+.mobile .roster-heading{font-size:7px;margin:6px 0}
+.mobile .squad-note,.mobile .source-details{font-size:7px;line-height:1.4}
+.mobile .source-details{margin-top:10px}
+.mobile #scoreboard{top:max(7px,env(safe-area-inset-top));left:max(9px,env(safe-area-inset-left));min-width:181px}
+.mobile .score-top{height:29px;border-bottom-width:2px}
+.mobile .score-top .abbr{font-size:9px;padding:0 10px}
+.mobile .score-top .score{font-size:18px;min-width:34px;padding:3px 7px}
+.mobile .swatch{width:3px;height:18px}
+.mobile .score-bottom{font-size:7px;padding:3px 7px}
+.mobile .broadcast{display:none}
+.mobile .playerbar{left:145px;bottom:max(9px,env(safe-area-inset-bottom));width:150px;padding:7px 9px 6px;border-left-width:2px;pointer-events:none}
+.mobile .playerbar.away{display:none}
+.mobile .player-info{font-size:9px;gap:6px}
+.mobile .pnumber{font-size:14px}
+.mobile .role{font-size:6px;margin-top:5px}
+.mobile .stamina{height:3px;margin-top:5px}
+.mobile #power{height:3px}
+.mobile #radar,.mobile.ref-mode #radar{width:103px;height:67px;bottom:max(8px,env(safe-area-inset-bottom));opacity:.5}
+.mobile .center-banner,.mobile.ref-mode #phasebanner{top:53px;min-width:150px;padding:6px 12px;border-top-width:2px;max-width:240px}
+.mobile #phaseTitle,.mobile.ref-mode #phaseTitle{font-size:17px;line-height:1.05}
+.mobile #phaseHint{font-size:7px;margin-top:4px}
+.mobile #event{top:24%}
+.mobile #event h2{font-size:48px;margin:0}
+.mobile #event p{font-size:9px;padding:6px 12px}
+.mobile #toast,.mobile.ref-mode .ref-incident~#toast{top:53px;max-width:48vw;font-size:9px;line-height:1.4;padding:7px 10px;z-index:20}
+.mobile #replaytag{font-size:8px;padding:5px 10px}
+.mobile #performance{top:48px;font-size:8px}
+.mobile .sub-board{top:52px;right:8px;width:223px;padding:8px 10px}
+.mobile .sub-board-head{font-size:7px;margin-bottom:4px;gap:5px}
+.mobile .sub-board-head span{font-size:6px}
+.mobile .sub-board-line{gap:7px;padding:4px 0}
+.mobile .sub-board-line>span{font-size:8px;min-width:31px}
+.mobile .sub-board-line strong{font-size:9px}
+.mobile .ref-role{left:10px;top:53px;font-size:8px;letter-spacing:.5px}
+.mobile .ref-role span{display:none}
+.mobile .ref-fitness{left:10px;top:72px;bottom:auto;width:123px;padding:7px 8px;border-top-width:1px;pointer-events:none}
+.mobile .ref-fitness strong{display:none}
+.mobile .ref-small-label{font-size:6px;letter-spacing:.2px;gap:4px}
+.mobile .ref-fitness .fitness-label{margin-top:5px;margin-bottom:3px}
+.mobile .ref-meter{height:3px;margin:5px 0}
+.mobile .ref-control{left:50%;right:auto;transform:translateX(-50%);width:147px;bottom:8px;padding:8px 10px;border-top-width:1px;pointer-events:none}
+.mobile .ref-mini-actions{display:none}
+.mobile .ref-advantage{top:53px;padding:6px 12px;font-size:10px;letter-spacing:1px}
+.mobile .ref-advantage span{font-size:7px;margin-top:2px}
+.mobile .ref-verdict{top:55px;padding:6px 10px;font-size:9px;line-height:1.5;max-width:240px}
+.mobile .ref-verdict small{font-size:7px}
+.mobile .ref-incident{top:49px;right:8px;width:245px;max-height:calc(100dvh - 58px);padding:9px;border-top-width:2px}
+.mobile .ref-incident h2{font-size:17px;margin:6px 0}
+.mobile .ref-incident>p{font-size:8px;margin:5px 0;line-height:1.4}
+.mobile .incident-view{font-size:7px;padding:5px 7px;margin-bottom:7px}
+.mobile .ref-incident .eyebrow{font-size:7px}
+.mobile .ref-decisions{gap:4px}
+.mobile .ref-decisions button{min-height:29px;padding:6px;font-size:9px;gap:6px}
+.mobile .ref-decisions small,.mobile .ref-decisions kbd,.mobile .ref-note{display:none}
+.mobile .ref-decisions .var-action{margin-top:2px}
+.mobile .ref-var{left:8px;bottom:8px;top:auto;width:min(350px,47vw);max-height:calc(100dvh - 57px);overflow:auto;padding:11px}
+.mobile .ref-var-head{gap:7px;font-size:7px}
+.mobile .ref-var .eyebrow{font-size:7px;letter-spacing:.5px}
+.mobile .ref-var h2{font-size:18px;margin:8px 0 10px}
+.mobile .var-angles{gap:4px;margin-bottom:10px}
+.mobile .var-angles button{font-size:7px;padding:8px 3px;min-height:29px}
+.mobile .var-transport{gap:6px;margin-top:8px}
+.mobile .var-transport>button{font-size:7px;padding:8px 6px;min-height:30px}
+.mobile .var-transport label{font-size:7px}
+.mobile .var-transport select{padding:3px;width:64px}
+.mobile .var-evidence{font-size:7px;line-height:1.5;margin:8px 0;padding-top:6px}
+.mobile .ref-var .primary{font-size:8px;padding:10px}
+.mobile .var-toggle,.mobile .var-restore{font-size:8px;padding:8px 10px;min-height:30px}
+.mobile .var-restore{left:8px;bottom:8px}
+.mobile .ref-casebook{right:8px;top:49px;width:255px;max-height:calc(100dvh - 60px);padding:12px}
+.mobile .case-row{font-size:8px;padding:8px 0}
+.mobile .case-row small{font-size:7px}
+.mobile .pause-layout{grid-template-columns:210px 1fr;gap:25px}
+.mobile .pause-actions{flex-direction:column;gap:7px}
+.mobile .pause-actions button{font-size:9px;padding:10px;min-height:32px}
+.mobile .stats-title{font-size:10px}
+.mobile .statrow{padding:5px 0;font-size:9px}
+.mobile .statrow b{font-size:11px}
+.mobile .statrow span{font-size:7px}
+.mobile .pause-tactics{margin-top:12px;gap:10px}
+.mobile .config-columns{grid-template-columns:1fr 1fr;gap:30px}
+.mobile .config-section h3{font-size:10px;margin-bottom:10px}
+.mobile .slider-row{margin:10px 0}
+.mobile .slider-row label{font-size:9px;margin-bottom:6px}
+.mobile .toggle{font-size:9px;margin:10px 0}
+.mobile .result-score{font-size:38px}
+.mobile .result-teams{font-size:10px}
+.mobile .footer-actions{margin-top:15px}
+.mobile .footer-actions button{font-size:10px;padding:11px;min-width:120px}
+.mobile .ref-grade{padding:10px;margin-bottom:10px;grid-template-columns:60px 1fr;gap:14px}
+.mobile .ref-grade>b{font-size:55px}
+.mobile .ref-grade strong{font-size:18px}
+.mobile .ref-grade p{font-size:9px}
+.mobile .ref-results-grid{gap:6px}
+.mobile .ref-results-grid>div{font-size:8px;padding:7px}
+.mobile .ref-results-grid b{font-size:17px}
+.mobile .ref-case-summary{max-height:100px}
+.mobile .team-panel{width:98vw;max-height:97dvh;padding:10px 14px}
+.mobile .team-panel h2{display:none}
+.mobile .team-panel .panel-head .eyebrow{font-size:8px}
+.mobile .team-panel .close{height:27px;width:30px;font-size:18px}
+.mobile .team-toolbar{gap:12px;padding-bottom:7px;margin-top:4px}
+.mobile .team-tabs button{font-size:8px;padding:7px 12px}
+.mobile .team-toolbar label{font-size:7px;gap:7px}
+.mobile .team-toolbar select{padding:3px 6px;height:29px}
+.mobile .team-toolbar>span{font-size:8px;margin-left:auto}
+.mobile .team-status{font-size:8px;line-height:1.4;min-height:12px;margin:6px 0}
+.mobile .team-management-layout{grid-template-columns:minmax(0,1.25fr) minmax(245px,1fr);gap:13px}
+.mobile .team-section-heading{font-size:8px;margin-bottom:6px}
+.mobile .team-section-heading span{font-size:6px}
+.mobile .management-pitch{height:calc(100dvh - 142px);min-height:215px}
+.mobile .team-player{width:57px;min-height:37px;padding:3px 2px}
+.mobile .team-shirt{font-size:12px}
+.mobile .team-player>b{font-size:6px;margin-top:2px}
+.mobile .team-player>small{font-size:5px;margin-top:2px}
+.mobile .team-player>em{font-size:5px;margin-top:1px}
+.mobile .team-fitness{margin-top:3px;height:2px}
+.mobile .team-bench{grid-template-columns:1fr 1fr;gap:5px}
+.mobile .reserve-player{width:100%;min-height:48px}
+.mobile .reserve-player .team-shirt{font-size:14px}
+.mobile .reserve-player>b{font-size:8px}
+.mobile .reserve-player>small{font-size:6px}
+.mobile .queue-heading{margin-top:10px}
+.mobile #teamPending{max-height:100px;overflow:auto}
+.mobile .pending-sub{font-size:7px;padding:5px 0;gap:7px;line-height:1.4}
+.mobile .pending-sub button{min-width:26px;height:27px}
+.mobile .team-empty,.mobile .team-instructions{font-size:7px;line-height:1.5;margin:6px 0}
+.mobile #teamPrevious{max-height:55px;overflow:auto}
+.mobile .team-history{font-size:7px;padding:5px 0}
+.mobile .team-management-footer{margin-top:7px;padding-top:7px;gap:15px}
+.mobile .team-management-footer p{font-size:7px;line-height:1.4}
+.mobile .team-management-footer button{width:110px;padding:9px 12px;font-size:9px}
+.mobile .team-drag-ghost{width:65px!important}
+.phone-portrait #touchControls{display:none!important}
+
+@media(max-height:350px){.mobile .touch-stick{width:96px;height:96px;bottom:10px}
+.mobile .touch-actions{width:183px;bottom:8px}
+.mobile .touch-actions button{height:37px}
+.mobile .touch-aux button{height:28px}
+.mobile .touch-knob{width:39px;height:39px}
+.mobile .playerbar{left:125px;width:125px}
+.mobile #radar,.mobile.ref-mode #radar{width:85px;height:55px}
+.mobile h1{font-size:30px}
+.mobile .main-buttons{margin-top:9px}
+.mobile .main-action{min-height:31px;padding:8px 13px}
+.mobile .ref-fitness{top:65px}
+.mobile .management-pitch{min-height:190px}
+.mobile .team-player{min-height:32px;width:53px}
+.mobile .team-player>small{display:none}
+.mobile .team-status{font-size:7px}
+}
+
+
+.mobile .management-pitch .team-player{height:31px;min-height:31px;padding:2px}
+.mobile .management-pitch .team-player>small,.mobile .management-pitch .team-fitness{display:none}
+.mobile .management-pitch .team-player>em{position:absolute;top:1px;right:1px;max-width:40px;overflow:hidden;white-space:nowrap;background:#172e22}
+
+
+.mobile #scoreboard{left:max(9px,env(safe-area-inset-left));top:max(7px,env(safe-area-inset-top))}
+.mobile .ref-role,.mobile .ref-fitness{left:max(10px,env(safe-area-inset-left))}
+.mobile .ref-var,.mobile .var-restore{left:max(8px,env(safe-area-inset-left))}
+.mobile .ref-incident,.mobile .ref-casebook,.mobile .sub-board{right:max(8px,env(safe-area-inset-right))}
+.mobile .selection-screen,.mobile .preparation-screen{padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+.mobile .panel,.mobile .team-panel{width:min(96vw,calc(100vw - max(8px,env(safe-area-inset-left)) - max(8px,env(safe-area-inset-right))))}
+.mobile .ref-control{bottom:max(8px,env(safe-area-inset-bottom))}
+
+@media(max-width:620px){.mobile .prep-layout{grid-template-columns:minmax(210px,.9fr) minmax(260px,1.1fr);gap:12px}
+.mobile .team-management-layout{grid-template-columns:minmax(0,1.25fr) minmax(210px,1fr)}
+}
+
+@media(max-height:350px){.mobile .management-pitch .team-player{height:27px;min-height:27px;padding:1px}
+.mobile .management-pitch .team-shirt{font-size:11px}
+.mobile .management-pitch .team-player>b{font-size:6px;margin-top:1px}
+}
+
+
+.phone-notice{display:none;position:fixed;top:max(54px,calc(env(safe-area-inset-top) + 45px));left:50%;transform:translateX(-50%);width:max-content;max-width:min(240px,45vw);padding:7px 11px;border-left:3px solid var(--lime);background:#10251ced;color:#edf5e9;text-align:center;z-index:7;pointer-events:none;box-shadow:0 3px 16px #0003}.mobile .phone-notice{display:block}.phone-notice>b{display:block;font-size:10px;line-height:1.4;letter-spacing:.3px}.phone-notice>small{display:block;font-size:7px;line-height:1.5;color:#c2d5b9;margin-top:3px}.phone-notice>small:empty{display:none}.ref-mode .phone-notice{border-color:#f6df57}.phone-notice.notice-bad{border-color:#f17870}.phone-notice.notice-good{border-color:#b8f36d}.mobile.phone-match #phasebanner,.mobile.phone-match #refVerdict,.mobile.phone-match #refAdvantage,.mobile.phone-match #toast{display:none!important}
+.mobile #scoreboard{width:190px;min-width:0}.mobile .score-top{display:grid;grid-template-columns:3px minmax(0,1fr) 36px 36px minmax(0,1fr) 3px;height:30px;align-items:stretch;overflow:hidden}.mobile .score-top .score{display:flex;align-items:center;justify-content:center;height:100%;min-width:0;line-height:normal;padding:0;font-size:18px}.mobile .score-top .abbr{display:flex;align-items:center;justify-content:center;width:auto;height:100%;padding:0;font-size:9px}.mobile .score-top .swatch{height:14px;width:3px;align-self:center}.mobile .score-bottom{height:16px;padding:3px 6px;align-items:center;line-height:1}
+
+.mobile.phone-match #subBoard{display:none!important}.phone-notice #phoneNoticeSubs{margin-top:5px;font-size:9px;line-height:1.5;text-align:left}.phone-notice #phoneNoticeSubs span{display:block}
+
+.mobile .team-player{touch-action:none}
+
+.preparation-screen{display:flex;flex-direction:column;padding:24px max(28px,4vw);overflow:hidden;background:linear-gradient(120deg,#0a1916f5,#10251cf2);gap:18px}
+.preparation-screen .prep-heading{flex:0 0 auto;width:100%;max-width:1440px;margin:0 auto;align-items:center}
+.preparation-screen .prep-heading h2{font-size:40px;margin:6px 0 0}
+.preparation-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.92fr) minmax(0,1fr);gap:24px;min-height:0;flex:1;width:100%;max-width:1440px;margin:auto}
+.prep-side{display:flex;flex-direction:column;min-width:0;min-height:0;background:#13271e;border:1px solid #bddeac30;padding:16px;overflow:hidden}
+.prep-squad-heading{display:flex;align-items:center;gap:12px;flex-shrink:0;min-height:57px;margin-bottom:10px;padding-bottom:12px;border-bottom:1px solid #bdd5b526}
+.prep-squad-heading img{width:40px;height:46px;object-fit:contain}
+.prep-squad-heading>div{flex:1;min-width:0}
+.prep-squad-heading span{font-size:8px;letter-spacing:1.6px;color:#a8c297;font-weight:bold}
+.prep-squad-heading h3{font-family:Offside,Arial,sans-serif;font-size:17px;font-weight:400;margin:6px 0 0;overflow-wrap:anywhere}
+.prep-squad-heading>b{font-size:10px;color:var(--lime);white-space:nowrap}
+.prep-side .formation-board{height:165px;min-height:165px;flex:0 0 auto;margin-bottom:10px;aspect-ratio:auto}
+.prep-side .formation-player{font-size:5px;max-width:64px}
+.prep-side .formation-player b{font-size:9px}
+.prep-roster{overflow:auto;min-height:0;flex:1;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#84a36c #0e2017}
+.prep-roster .roster-heading{padding:9px 3px 6px;font-size:8px;letter-spacing:1px;color:var(--lime);background:#13271e}
+.prep-roster .squad-player{grid-template-columns:24px minmax(0,1fr) 30px;padding:6px 3px;font-size:11px;min-height:27px}
+.prep-roster .squad-player span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.prep-roster .squad-player i{font-size:10px}
+.prep-roster .squad-player em{font-size:8px;text-align:right}
+.prep-squad-action{margin-top:12px;flex-shrink:0;text-align:center;font-size:10px;min-height:38px;padding:9px}
+.prep-center{min-width:0;overflow:auto;overscroll-behavior:contain;padding:4px 6px 12px;scrollbar-width:thin}
+.prep-versus{display:flex;align-items:center;justify-content:center;gap:22px;padding:10px 0 22px;font-size:22px;letter-spacing:2px}
+.prep-versus span{font-size:9px;color:#8da481}
+.prep-center .settings-grid{gap:13px 12px;margin-bottom:14px}
+.prep-center .field label{font-size:8px;line-height:1.5;letter-spacing:1px}
+.prep-center .field select{min-height:36px;font-size:12px;padding:8px}
+.prep-center select:disabled{opacity:.6;cursor:default}
+.prep-center>.secondary{width:100%;text-align:center;min-height:40px;padding:10px;font-size:10px;border-color:#b8f36d75}
+.prep-center>.notes{font-size:10px;line-height:1.7;margin-top:14px}
+.prep-center>.text-button{font-size:8px;line-height:1.6;text-align:left}
+.prep-center .prep-detail{text-align:center;font-size:9px;margin:13px 0;color:#a8bc9e}
+.prep-footer{position:relative;width:100%;max-width:1440px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:7px;flex-shrink:0}
+.prep-footer>.primary{width:min(680px,64vw);min-height:49px;font-family:Offside,Arial,sans-serif;font-size:16px;padding:14px 22px}
+.prep-footer>small{font-size:7px;letter-spacing:1.4px;color:#8da481}
+.prep-footer .source-details{position:absolute;left:0;bottom:5px;max-width:20%;font-size:8px;margin:0;color:#9db391}
+.prep-footer .source-details[open]{background:#102218;padding:10px;border:1px solid #abc99b55;z-index:2;max-height:150px;overflow:auto}
+.read-only .team-player{cursor:default}.read-only .team-player:focus-visible{outline:1px solid #9bac94;background:#1c3326}.read-only #teamPending .pending-sub button,.read-only #cancelKeeperSwap{display:none}
+@media(max-height:760px){.preparation-screen{gap:12px;padding-top:16px;padding-bottom:12px}.preparation-screen .prep-heading h2{font-size:30px}.prep-side .formation-board{height:130px;min-height:130px}.prep-squad-heading{min-height:45px;padding-bottom:8px}.prep-squad-heading h3{font-size:14px}.prep-roster .squad-player{padding:5px 3px;min-height:24px}.prep-footer>.primary{min-height:42px;padding:10px 20px}}
+.mobile .preparation-screen{padding:9px max(12px,env(safe-area-inset-right)) 7px max(12px,env(safe-area-inset-left));gap:8px}
+.mobile .preparation-screen .prep-heading{margin:0;min-height:31px}.mobile .preparation-screen .prep-heading h2{font-size:22px;margin:3px 0 0}.mobile .preparation-screen .prep-heading .eyebrow{font-size:6px;letter-spacing:1.5px}
+.mobile .preparation-grid{grid-template-columns:minmax(0,1fr) minmax(180px,.94fr) minmax(0,1fr);gap:10px}
+.mobile .prep-side{padding:8px}.mobile .prep-side .formation-board{display:none}.mobile .prep-squad-heading{gap:6px;min-height:40px;margin-bottom:3px;padding-bottom:6px;align-items:center}.mobile .prep-squad-heading img{width:25px;height:31px}.mobile .prep-squad-heading span{font-size:6px;letter-spacing:.5px}.mobile .prep-squad-heading h3{font-size:11px;margin:3px 0 0}.mobile .prep-squad-heading>b{font-size:8px}
+.mobile .prep-roster .squad-player{grid-template-columns:18px minmax(0,1fr) 22px;font-size:9px;padding:5px 1px;min-height:22px}.mobile .prep-roster .squad-player i{font-size:9px}.mobile .prep-roster .squad-player em{font-size:7px}.mobile .prep-roster .roster-heading{font-size:6px;padding:7px 1px 4px}
+.mobile .prep-squad-action{min-height:30px;font-size:7px;letter-spacing:.5px;margin-top:6px;padding:6px 3px}.mobile .prep-center{padding:0 2px 5px}.mobile .prep-versus{padding:4px 0 10px;font-size:14px;gap:13px}.mobile .prep-center .settings-grid{grid-template-columns:1fr;gap:8px;margin-bottom:8px}.mobile .prep-center .field label{font-size:7px;margin-bottom:3px}.mobile .prep-center .field select{min-height:32px;padding:5px;font-size:16px}.mobile .prep-center>.secondary{min-height:32px;padding:7px 4px;font-size:8px;letter-spacing:.4px}.mobile .prep-center>.notes{font-size:8px;margin-top:7px}.mobile .prep-center .prep-detail{font-size:7px;margin:8px 0}.mobile .prep-center>.text-button{font-size:7px}
+.mobile .prep-footer{gap:4px}.mobile .prep-footer>.primary{width:70vw;min-height:36px;font-size:12px;padding:9px 15px}.mobile .prep-footer kbd{display:none}.mobile .prep-footer>small{font-size:5px}.mobile .prep-footer .source-details{font-size:6px;max-width:13%;bottom:6px;line-height:1.5}.mobile .prep-footer .source-details[open]{max-width:170px;max-height:160px;font-size:9px}
+@media(max-height:350px){.mobile .preparation-screen{gap:6px}.mobile .preparation-screen .prep-heading h2{font-size:19px}.mobile .prep-squad-heading{min-height:33px}.mobile .prep-squad-heading img{width:21px;height:26px}.mobile .prep-squad-heading h3{font-size:9px}.mobile .prep-roster .squad-player{font-size:8px;min-height:20px}.mobile .prep-footer>.primary{min-height:32px;padding:7px 15px}}
+@media(prefers-reduced-motion:reduce){.prep-center button,.prep-footer button,.prep-squad-action{transition:none}}
+
+.team-panel.pre-match .queue-heading,.team-panel.pre-match #teamPending,.team-panel.pre-match #teamPrevious{display:none}
+
+.prep-center{scrollbar-color:#84a36c #0e2017}
+
 </style><!-- Offside font license:
 Copyright 2012 The Offside Project Authors (https://github.com/etunni/offside) with Reserved Font Name 'Offside'
 
@@ -124,19 +477,26 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <div id="menu" class="screen"><div class="topline"><div class="brand"><i>MD</i> MATCHDAY / 26</div><div class="offline">OFFLINE EDITION · KEYBOARD</div></div>
 <div class="menu-content"><div class="eyebrow">THE BEAUTIFUL GAME. YOUR WAY.</div><h1 class="display">OWN THE<br><span>MOMENT.</span></h1><p class="intro">The lights are on. The crowd is waiting.<br>Your club. Your match. Your moment.</p>
 <div class="main-buttons"><button class="main-action selected" id="playGame">PLAY GAME <span>→</span></button><button class="main-action" id="refereeMode">REFEREE SIMULATOR <span>⚑</span></button><button class="main-action" id="showControls">LEARN TO PLAY <span>↗</span></button></div></div>
-<div class="hero-label"><span class="stripe"></span><div class="display">EVERY PASS.<br>EVERY POSSIBILITY.</div><p id="stadium-label">NORTHLIGHT ARENA</p></div><div class="menu-bottom"><span>11 v 11 · 10 CLUBS · SINGLE PLAYER</span><span>MATCHDAY / v1.4</span></div></div>
+<div class="hero-label"><span class="stripe"></span><div class="display">EVERY PASS.<br>EVERY POSSIBILITY.</div><p id="stadium-label">NORTHLIGHT ARENA</p></div><div class="menu-bottom"><span>11 v 11 · 10 CLUBS · SINGLE PLAYER</span><span>MATCHDAY / v1.7</span></div></div>
 <div id="teams" class="screen selection-screen hidden"><div class="selection-stripes" aria-hidden="true"></div><div class="selection-top"><div><span class="eyebrow" id="selectionStep">01 / CHOOSE YOUR TEAM</span><h2 class="display">CLUB SELECT</h2></div><button class="selection-back" id="teamBack">← BACK</button></div><div class="team-columns">
 <section class="club-panel" id="homePanel" aria-label="Player club selection"><header><h3>Home</h3><span id="homeLeague">PLAYER</span></header><div class="club-scroll" id="homeList"></div><footer><button id="confirmHome">CONFIRM PLAYER TEAM <span>→</span></button></footer></section>
 <section class="club-panel" id="awayPanel" aria-label="CPU club selection"><header><h3>Away</h3><span id="awayLeague">CPU BOT</span></header><div class="club-scroll" id="awayList"></div><footer><button id="confirmAway" disabled>SELECT PLAYER TEAM FIRST</button></footer></section>
 </div><div class="selection-note" id="selectionNote">Choose your club, then confirm to select your opponent. ↑ ↓ SELECT · ENTER CONFIRM</div></div>
-<div id="preparation" class="screen preparation-screen hidden"><div class="prep-heading"><div><span class="eyebrow">03 / MATCH PREPARATION</span><h2 class="display" id="prepTitle">SET THE STAGE.</h2></div><button class="text-button" id="prepBack">← CHANGE CLUBS</button></div>
-<div class="prep-layout"><section class="prep-settings"><div class="prep-matchup" id="prepMatchup"></div><div class="settings-grid"><div class="field"><label for="formation" id="formationCaption">Player formation</label><select id="formation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></div><div class="field"><label for="difficulty" id="difficultyCaption">CPU difficulty</label><select id="difficulty"><option value="0">Amateur</option><option value="1">Semi-Pro</option><option value="2" selected>Professional</option><option value="3">World Class</option><option value="4">Legendary</option></select></div><div class="field ref-config hidden"><label for="awayFormation">Away CPU formation</label><select id="awayFormation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></div><div class="field ref-config hidden"><label for="awayDifficulty">Away CPU difficulty</label><select id="awayDifficulty"><option value="0">Amateur</option><option value="1">Semi-Pro</option><option value="2" selected>Professional</option><option value="3">World Class</option><option value="4">Legendary</option></select></div><div class="field ref-config hidden"><label for="homeTactic">Home CPU tactic</label><select id="homeTactic"><option value="balanced">Balanced</option><option value="possession">Possession</option><option value="direct">Direct attack</option><option value="press">High press</option></select></div><div class="field ref-config hidden"><label for="awayTactic">Away CPU tactic</label><select id="awayTactic"><option value="balanced">Balanced</option><option value="possession">Possession</option><option value="direct">Direct attack</option><option value="press">High press</option></select></div><div class="field"><label for="duration">Match length · total</label><select id="duration"><option value="120">2 minutes</option><option value="240" selected>4 minutes</option><option value="360">6 minutes</option><option value="600">10 minutes</option></select></div><div class="field"><label for="weather">Weather</label><select id="weather"><option value="sunny">Sunny ☀</option><option value="rainy">Rainy ☂</option></select></div></div><p class="prep-detail" id="halfLengthNote">Two halves of 2 minutes.</p><button class="primary kickoff" id="start">KICK OFF <kbd>ENTER ↵</kbd></button><button class="text-button" id="showSettings">AUDIO, CAMERA & ADVANCED SETTINGS</button><p class="notes" id="prepModeNote">Auto-switch chooses your nearest defender when the CPU has the ball. Keep possession with passing, through balls and crosses.</p></section>
-<section class="prep-lineup"><div class="lineup-heading"><h3 id="lineupClub">STARTING XI</h3><span id="formationLabel">4-3-3</span></div><div class="lineup-content"><div class="formation-board" id="formationBoard" aria-label="Starting formation"></div><div class="roster-wrap"><div class="roster-tabs"><button class="active" id="homeRoster">PLAYER SQUAD</button><button id="awayRoster">CPU SQUAD</button></div><div id="rosterList"></div></div></div><p class="squad-note">15 selected players per club · 11 starters + 4 reserves. Squad names and numbers follow the linked club / league sources; MATCHDAY ratings are independent game values.</p><details class="source-details"><summary>Squad sources & credits</summary><div id="squadSources"></div><p>Club crests: ESPN team-logo assets. Offside: Google Fonts, SIL Open Font License.</p></details></section></div></div>
+<div id="preparation" class="screen preparation-screen hidden">
+ <div class="prep-heading"><div><span class="eyebrow">03 / MATCH PREPARATION</span><h2 class="display" id="prepTitle">SET THE STAGE.</h2></div><button class="text-button" id="prepBack">← CHANGE CLUBS</button></div>
+ <div class="preparation-grid">
+  <section class="prep-side" aria-label="Home squad"><header id="playerSquadHeading" class="prep-squad-heading"></header><div id="formationBoard" class="formation-board" aria-label="Home starting formation"></div><div id="rosterList" class="prep-roster"></div><button id="homeRoster" class="secondary prep-squad-action">FORMATION &amp; STARTING XI</button></section>
+  <section class="prep-center" aria-label="Match options"><div class="prep-versus" id="prepMatchup"></div><div class="settings-grid"><div class="field"><label for="formation" id="formationCaption">Player formation</label><select id="formation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></div><div class="field"><label for="difficulty" id="difficultyCaption">CPU difficulty</label><select id="difficulty"><option value="0">Amateur</option><option value="1">Semi-Pro</option><option value="2" selected>Professional</option><option value="3">World Class</option><option value="4">Legendary</option></select></div><div class="field"><label for="awayFormation">Away CPU formation</label><select id="awayFormation" disabled><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></div><div class="field ref-config hidden"><label for="awayDifficulty">Away CPU difficulty</label><select id="awayDifficulty"><option value="0">Amateur</option><option value="1">Semi-Pro</option><option value="2" selected>Professional</option><option value="3">World Class</option><option value="4">Legendary</option></select></div><div class="field ref-config hidden"><label for="homeTactic">Home CPU tactic</label><select id="homeTactic"><option value="balanced">Balanced</option><option value="possession">Possession</option><option value="direct">Direct attack</option><option value="press">High press</option></select></div><div class="field ref-config hidden"><label for="awayTactic">Away CPU tactic</label><select id="awayTactic"><option value="balanced">Balanced</option><option value="possession">Possession</option><option value="direct">Direct attack</option><option value="press">High press</option></select></div><div class="field"><label for="duration">Match length · total</label><select id="duration"><option value="120">2 minutes</option><option value="240" selected>4 minutes</option><option value="360">6 minutes</option><option value="600">10 minutes</option></select></div><div class="field"><label for="weather">Weather</label><select id="weather"><option value="sunny">Sunny ☀</option><option value="rainy">Rainy ☂</option></select></div></div><button id="prepFormation" class="secondary">FORMATION &amp; STARTING XI</button><p class="prep-detail" id="halfLengthNote"></p><button class="text-button" id="showSettings">AUDIO, CAMERA &amp; ADVANCED SETTINGS</button><p class="notes" id="prepModeNote"></p></section>
+  <section class="prep-side" aria-label="Away squad"><header id="cpuSquadHeading" class="prep-squad-heading"></header><div id="awayFormationBoard" class="formation-board" aria-label="Away starting formation"></div><div id="awayRosterList" class="prep-roster"></div><button id="awayRoster" class="secondary prep-squad-action">VIEW FORMATION</button></section>
+ </div>
+ <footer class="prep-footer"><details class="source-details"><summary>SQUAD SOURCES</summary><div id="squadSources"></div><p>Club crest assets: ESPN. Offside: Google Fonts, SIL OFL.</p></details><button class="primary kickoff" id="start">KICK OFF <kbd>ENTER ↵</kbd></button><small>11 STARTERS · 4 RESERVES</small></footer>
+</div>
 <div id="hud" class="hud hidden"><div id="scoreboard"><div class="score-top"><span class="swatch" id="homeswatch"></span><span class="abbr" id="homeabbr">HFC</span><span class="score" id="homescore">0</span><span class="score" id="awayscore">0</span><span class="abbr" id="awayabbr">AFC</span><span class="swatch" id="awayswatch"></span></div><div class="score-bottom"><span id="clock">00:00</span><span id="half">1ST HALF</span><span>EXHIBITION</span></div></div><div class="broadcast"><strong>MD / 26</strong><br><b>LIVE</b><div id="weathertag" class="weather-tag">SUNNY</div></div>
 <div class="playerbar"><div class="player-info"><span class="pnumber" id="pnumber">9</span><span id="pname">SANTOS</span></div><div class="role" id="prole">ST · HARBOUR FC</div><div class="stamina"><i id="pstamina"></i></div><div id="power" class="hidden"><i></i></div></div><div class="playerbar away"><div class="player-info"><span id="cpuName">LARSEN</span><span class="pnumber" id="cpuNumber">9</span></div><div class="role" id="cpuRole">ST · ATLAS FC</div><div class="stamina"><i id="cpuStamina"></i></div></div>
-<canvas id="radar" width="424" height="276" aria-label="Pitch radar"></canvas><div id="hint"><kbd>W A S D</kbd> MOVE &nbsp; <kbd>J</kbd> PASS &nbsp; <kbd>K</kbd> SHOOT &nbsp; <kbd>Q</kbd> SWITCH &nbsp; <kbd>ESC</kbd> PAUSE / HELP</div><div id="phasebanner" class="center-banner hidden"><div class="display" id="phaseTitle"></div><small id="phaseHint"></small></div><div id="event" class="hidden"><h2 class="display">GOAL!</h2><p></p></div><div id="replaytag" class="hidden">◁ INSTANT REPLAY</div><div id="performance" class="hidden"></div></div>
-<div id="pause" class="screen overlay hidden"><div class="panel"><div class="eyebrow" id="pauseEyebrow">MATCH PAUSED</div><h2 class="display" id="pauseTitle">TAKE A BREATHER.</h2><div class="pause-layout"><div class="pause-actions"><button class="primary" id="resume">RESUME MATCH <span>→</span></button><button class="secondary" id="pauseControls">Keyboard controls</button><button class="secondary" id="pauseSettings">Audio & settings</button><button class="secondary" id="restartMatch">Restart match</button><button class="secondary" id="backMenu">Back to kick off</button></div><div><div class="stats-title"><span id="statHome"></span><span id="statScore"></span><span id="statAway"></span></div><div id="stats"></div><div class="pause-tactics"><div class="field"><label for="liveFormation">Formation</label><select id="liveFormation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></div><div class="field"><label for="liveTactic">Team tactic</label><select id="liveTactic"><option value="balanced">Balanced</option><option value="possession">Possession</option><option value="direct">Direct attack</option><option value="press">High press</option></select></div></div></div></div></div></div>
-<div id="controls" class="screen overlay hidden"><div class="panel"><div class="panel-head"><span class="eyebrow">MASTER YOUR GAME</span><button class="close" id="closeControls" aria-label="Close controls">×</button></div><h2 class="display">LEARN TO PLAY</h2><div class="binding-toolbar"><div role="tablist" aria-label="Control mode"><button role="tab" data-binding-tab="player">PLAYER</button><button role="tab" data-binding-tab="referee">REFEREE</button><button role="tab" data-binding-tab="var">VAR</button></div><button id="resetBindings" class="secondary">RESET ALL DEFAULTS</button></div><p class="binding-help">Click a key, then press its replacement. Two slots are available per action. Escape cancels capture and always remains available to exit.</p><p id="bindingStatus" role="status" class="binding-status">Default controls are ready to play.</p><div id="bindingRows" class="binding-grid"></div><p class="notes"><b>Playing:</b> Hold Shoot to build power, release to strike. Aim while moving and pass toward teammates. The intended receiver automatically approaches the incoming ball for ground passes, through balls and crosses. Sprinting drains stamina. Your nearest defender is selected automatically when the opposition has possession.<br><b>Goalkeepers:</b> A ball caught in the keeper's hands is protected until distribution. Goalkeepers normally guard the goal line, collect nearby safe loose balls and release catches automatically.<br><b>REFEREE SIMULATOR:</b> Move relative to your camera, turn your view or face the ball. Assess incidents using the configured decisions above. The penalty option appears only for a foul inside the defending area; chosen decisions still apply when incorrect. VAR offers three angles, playback speed, a contact frame and a hide/show panel control. The casebook records judgments and positioning. Contact and offside checks are simplified for this game.</p></div></div>
+<div id="subBoard" class="sub-board hidden" aria-live="polite"><div class="sub-board-head"><b>SUBSTITUTION</b><span id="subTeam"></span></div><div class="sub-board-line"><span class="sub-out">↓ OUT</span><strong id="subOut"></strong></div><div class="sub-board-line"><span class="sub-in">↑ IN</span><strong id="subIn"></strong></div></div><canvas id="radar" width="424" height="276" aria-label="Pitch radar"></canvas><div id="hint"><kbd>W A S D</kbd> MOVE &nbsp; <kbd>J</kbd> PASS &nbsp; <kbd>K</kbd> SHOOT &nbsp; <kbd>Q</kbd> SWITCH &nbsp; <kbd>ESC</kbd> PAUSE / HELP</div><div id="phasebanner" class="center-banner hidden"><div class="display" id="phaseTitle"></div><small id="phaseHint"></small></div><div id="event" class="hidden"><h2 class="display">GOAL!</h2><p></p></div><div id="replaytag" class="hidden">◁ INSTANT REPLAY</div><div id="performance" class="hidden"></div></div>
+<div id="pause" class="screen overlay hidden"><div class="panel"><div class="eyebrow" id="pauseEyebrow">MATCH PAUSED</div><h2 class="display" id="pauseTitle">TAKE A BREATHER.</h2><div class="pause-layout"><div class="pause-actions"><button class="primary" id="resume">RESUME MATCH <span>→</span></button><button class="secondary" id="pauseFormation">Formation &amp; substitutions</button><button class="secondary" id="pauseControls">Keyboard controls</button><button class="secondary" id="pauseSettings">Audio & settings</button><button class="secondary" id="restartMatch">Restart match</button><button class="secondary" id="backMenu">Back to kick off</button></div><div><div class="stats-title"><span id="statHome"></span><span id="statScore"></span><span id="statAway"></span></div><div id="stats"></div><div class="pause-tactics" id="pauseTactics"><div class="field"><label for="liveFormation">Formation</label><select id="liveFormation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></div><div class="field"><label for="liveTactic">Team tactic</label><select id="liveTactic"><option value="balanced">Balanced</option><option value="possession">Possession</option><option value="direct">Direct attack</option><option value="press">High press</option></select></div></div></div></div></div></div>
+<div id="teamManagement" class="screen overlay hidden" aria-label="Formation and substitutions"><div class="panel team-panel"><div class="panel-head"><span class="eyebrow">DUGOUT / TEAM MANAGEMENT</span><button class="close" id="closeTeamManagement" aria-label="Close formation and substitutions">×</button></div><h2 class="display" id="teamManagementTitle">MAKE THE CHANGE.</h2><div class="team-toolbar"><div class="team-tabs"><button id="teamHome" class="active">HOME</button><button id="teamAway">AWAY</button></div><label>FORMATION <select id="teamFormation" aria-label="Live team formation"><option>4-3-3</option><option>4-4-2</option><option>4-2-3-1</option><option>3-4-3</option><option>3-5-2</option><option>5-4-1</option></select></label><span id="teamSubCount">0 / 3 USED · 0 QUEUED</span></div><p id="teamStatus" class="team-status" role="status"></p><div class="team-management-layout"><section><div class="team-section-heading"><b id="teamClub">STARTING XI</b><span id="teamDragHint">DRAG TO SWAP</span></div><div class="management-pitch" aria-label="Live tactical formation"><div class="management-center"></div><div class="management-box top"></div><div class="management-box bottom"></div><div id="teamPitchPlayers"></div></div><p class="team-instructions" id="teamEditNote"></p></section><section class="team-reserves"><div class="team-section-heading"><b>RESERVES</b><span id="teamReserveHint">DRAG ONTO THE PITCH</span></div><div id="teamBench" class="team-bench"></div><div class="team-section-heading queue-heading"><b>PENDING CHANGES</b><span>NEXT STOPPAGE</span></div><div id="teamPending"></div><div id="teamPrevious"></div></section></div><div class="team-management-footer"><p id="teamLimitNote">Maximum three substitutions per team per match. Substituted players cannot return. Changes wait for a stoppage after resuming; dismissed players cannot be replaced.</p><button class="primary" id="teamDone">DONE <span>→</span></button></div></div></div>
+<div id="controls" class="screen overlay hidden"><div class="panel"><div class="panel-head"><span class="eyebrow">MASTER YOUR GAME</span><button class="close" id="closeControls" aria-label="Close controls">×</button></div><h2 class="display">LEARN TO PLAY</h2><div id="touchGuide" class="touch-guide hidden"><p><b>TOUCH CONTROLS / PLAYER</b><br>Drag the left stick to move and aim. Tap PASS or THROUGH to pass, CROSS to loft the ball. Hold SHOOT, then release to strike. Without the ball, PASS tackles and SHOOT slides. Tap SPRINT to toggle running. Hold PRESS or SKILL / JOCKEY; tap SWITCH to change player. MORE opens camera and tactics.</p><p><b>REFEREE SIMULATOR</b><br>Move with the stick. Drag a clear part of the pitch to look around 360°. The LOOK LEFT / RIGHT buttons also turn the camera, or tap FACE BALL to find the action. SPRINT toggles running. WHISTLE signals to the players. When an incident appears, choose a decision or CHECK VAR on its panel. The casebook records your calls.</p><p><b>REVIEW &amp; TEAM MANAGEMENT</b><br>VAR: tap camera angles, drag the timeline, change speed, pause playback, hide/show the panel, then return to decide. Before kickoff, open FORMATION &amp; STARTING XI to choose starters freely. During a player match, Pause → Formation &amp; substitutions: drag a reserve onto a starter, or tap two player cards. Referee mode permits squad inspection only. Drag two starters to swap their positions.</p><p><b>LANDSCAPE</b><br>Play with your phone sideways. The top-right buttons pause the game or request fullscreen. Rotating to portrait pauses play. Resume after turning sideways again.</p></div><div class="binding-toolbar"><div role="tablist" aria-label="Control mode"><button role="tab" data-binding-tab="player">PLAYER</button><button role="tab" data-binding-tab="referee">REFEREE</button><button role="tab" data-binding-tab="var">VAR</button></div><button id="resetBindings" class="secondary">RESET ALL DEFAULTS</button></div><p class="binding-help">Click a key, then press its replacement. Two slots are available per action. Escape cancels capture and always remains available to exit.</p><p id="bindingStatus" role="status" class="binding-status">Default controls are ready to play.</p><div id="bindingRows" class="binding-grid"></div><p class="notes"><b>Playing:</b> Hold Shoot to build power, release to strike. Aim while moving and pass toward teammates. The intended receiver automatically approaches the incoming ball for ground passes, through balls and crosses. Sprinting drains stamina. Your nearest defender is selected automatically when the opposition has possession.<br><b>Goalkeepers:</b> A ball caught in the keeper's hands is protected until distribution. Goalkeepers normally guard the goal line, collect nearby safe loose balls and release catches automatically.<br><b>REFEREE SIMULATOR:</b> Move relative to your camera, turn your view or face the ball. Assess incidents using the configured decisions above. The penalty option appears only for a foul inside the defending area; chosen decisions still apply when incorrect. VAR offers three angles, playback speed, a contact frame and a hide/show panel control. The casebook records judgments and positioning. Contact and offside checks are simplified for this game.</p></div></div>
 <div id="settings" class="screen overlay hidden"><div class="panel"><div class="panel-head"><span class="eyebrow">MAKE IT YOUR MATCH</span><button class="close" id="closeSettings" aria-label="Close settings">×</button></div><h2 class="display">MATCH SETTINGS</h2><div class="config-columns"><div class="config-section"><h3>Picture & play</h3><div class="field"><label for="tempo">Gameplay tempo</label><select id="tempo"><option value="authentic">Authentic · tactical</option><option value="competitive">Competitive · responsive</option></select></div><br><div class="field"><label for="quality">Rendering quality</label><select id="quality"><option value="auto">Auto · adaptive resolution</option><option value="low">Low · faster rendering</option><option value="medium">Medium · native resolution</option><option value="high">High · sharper image</option></select></div><br><div class="field"><label for="camera">Match camera</label><select id="camera"><option value="broadcast">Broadcast</option><option value="close">Close · closer to the action</option><option value="tele">Tele · more of the pitch</option><option value="wide">Wide · tactical overview</option></select></div><label class="toggle"><input type="checkbox" id="offside" checked>Simplified offside rule</label><label class="toggle"><input type="checkbox" id="replays" checked>Instant goal replays</label><h3 style="margin-top:25px">CPU tuning</h3><div class="slider-row"><label for="cpuReaction">Decision delay <output id="cpuReactionOut">100%</output></label><input id="cpuReaction" type="range" min="60" max="160" value="100"></div><div class="slider-row"><label for="cpuAccuracy">Passing / shooting accuracy <output id="cpuAccuracyOut">100%</output></label><input id="cpuAccuracy" type="range" min="60" max="150" value="100"></div><div class="slider-row"><label for="cpuPress">Defensive pressure <output id="cpuPressOut">100%</output></label><input id="cpuPress" type="range" min="50" max="150" value="100"></div></div>
 <div class="config-section"><h3>Stadium sound</h3><div class="slider-row"><label for="master">Master volume <output id="masterOut">70%</output></label><input id="master" type="range" min="0" max="100" value="70"></div><div class="slider-row"><label for="crowd">Crowd & atmosphere <output id="crowdOut">65%</output></label><input id="crowd" type="range" min="0" max="100" value="65"></div><div class="slider-row"><label for="effects">Ball, whistle & match effects <output id="effectsOut">80%</output></label><input id="effects" type="range" min="0" max="100" value="80"></div><div class="slider-row"><label for="music">Menu soundtrack <output id="musicOut">45%</output></label><input id="music" type="range" min="0" max="100" value="45"></div><label class="toggle"><input type="checkbox" id="muted">Mute all sound</label><p class="notes">Original synthesized stereo crowd, referee whistles, ball impacts, goal reactions and an instrumental menu loop. Audio starts after your first interaction.</p><p class="notes">CPU difficulty changes decision speed, positioning pressure and execution error. Players use equal physical speed rules on both teams.</p><p class="notes">WebGL provides full 3D. A software perspective view is used when WebGL is unavailable. Auto quality reduces render resolution if frames stay slow. For older laptops, choose Low and close other heavy tabs. Settings are saved on this browser when storage is available.</p></div></div></div></div>
 <div id="result" class="screen overlay hidden"><div class="panel" style="max-width:650px"><div class="eyebrow">THE FINAL WHISTLE</div><h2 class="display" id="resultTitle">FULL TIME</h2><div id="resultMatch"><div class="result-teams"><span id="resultHome"></span><span id="resultAway"></span></div><div class="display result-score" id="resultScore"></div><div id="resultStats"></div></div><div id="refResults" class="hidden"></div><div class="footer-actions"><button class="primary" id="rematch">PLAY AGAIN <span>→</span></button><button class="secondary" id="resultMenu">KICK OFF MENU</button></div></div></div>
@@ -171,6 +531,32 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 <button id="varRestore" class="var-restore hidden" aria-label="Show VAR review panel">H · SHOW VAR CONTROLS</button>
 <div id="refCasebook" class="ref-casebook hidden"><div class="ref-var-head"><span class="eyebrow">REFEREE CASEBOOK</span><button id="refBookClose" aria-label="Close referee casebook">×</button></div><div id="refBookRows"></div></div>
 
+
+<div id="touchControls" class="touch-controls hidden" aria-label="Phone game controls">
+ <div class="touch-topbar"><button data-touch-action="pause" aria-label="Pause match">Ⅱ</button><button id="phoneFullscreen" aria-label="Fullscreen landscape">⛶</button></div>
+ <div id="touchPlayArea">
+  <div id="touchStick" class="touch-stick" role="group" aria-label="Movement joystick"><span id="touchKnob" class="touch-knob"></span></div>
+  <div id="touchPlayerActions" class="touch-actions">
+   <div class="touch-action-grid">
+    <button data-touch-action="shoot" class="primary-touch" aria-label="Hold shoot or slide"><span id="touchShootLabel">SHOOT</span><small>HOLD → RELEASE</small></button>
+    <button data-touch-action="pass" aria-label="Pass or tackle"><span id="touchPassLabel">PASS</span><small>GROUND</small></button>
+    <button data-touch-action="through" aria-label="Through pass">THROUGH<small>INTO SPACE</small></button>
+    <button data-touch-action="sprint" aria-pressed="false">SPRINT<small>TOGGLE</small></button>
+    <button data-touch-action="switch">SWITCH<small>PLAYER</small></button>
+    <button data-touch-action="cross">CROSS<small>LOFTED</small></button>
+   </div>
+   <div class="touch-aux"><button data-touch-action="skill">SKILL / JOCKEY</button><button data-touch-action="press">PRESS</button><button data-touch-action="more">MORE ···</button></div>
+   <div id="touchMore" class="touch-more hidden"><button data-touch-action="camera">CAMERA</button><button data-touch-action="tactics">TACTICS</button></div>
+  </div>
+  <div id="touchRefActions" class="touch-actions hidden"><div class="touch-action-grid touch-ref-grid">
+   <button data-touch-action="lookLeft">↶ LOOK<small>HOLD LEFT</small></button><button data-touch-action="face">FACE BALL</button><button data-touch-action="lookRight">LOOK ↷<small>HOLD RIGHT</small></button>
+   <button data-touch-action="sprint" aria-pressed="false">SPRINT<small>TOGGLE</small></button><button data-touch-action="whistle" class="whistle-touch wide-touch">WHISTLE</button>
+   <button data-touch-action="book" class="wide-touch">CASEBOOK</button><button data-touch-action="camera">CAMERA</button>
+  </div></div>
+ </div>
+</div>
+<div id="rotateDevice" class="rotate-screen hidden" role="dialog" aria-modal="true" aria-label="Rotate phone to landscape"><div class="rotate-content"><div class="rotate-phone-icon" aria-hidden="true"></div><h2 class="display">ROTATE TO PLAY</h2><p id="rotateHint">Turn your phone sideways for the full pitch and touch controls. Your match stays paused while this screen is open.</p><button id="rotateFullscreen" class="primary">LANDSCAPE / FULLSCREEN <span>↻</span></button></div></div>
+<div id="phoneNotice" class="phone-notice hidden" role="status" aria-live="polite"><b id="phoneNoticeTitle"></b><small id="phoneNoticeDetail"></small><div id="phoneNoticeSubs" class="hidden"><span id="phoneNoticeSubOut" class="sub-out"></span><span id="phoneNoticeSubIn" class="sub-in"></span></div></div>
 <div id="toast" class="hidden"></div><div id="error" class="screen hidden"><div><h2 class="display">THE PITCH COULDN'T LOAD</h2><p id="errorMessage">Enable hardware acceleration and use a browser with WebGL support.</p><button class="primary" onclick="location.reload()">TRY AGAIN</button></div></div>
 <!-- Three.js r160, Copyright 2010-2023 Three.js Authors. MIT License.
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -191,6 +577,7 @@ function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"f
 var clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 var dist=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 var unit=(x,z)=>{const n=Math.hypot(x,z)||1;return {x:x/n,z:z/n}};
+var playerFrame=p=>({x:p.x,z:p.z,fx:p.fx,fz:p.fz,vx:p.vx,vz:p.vz,phase:p.phase,holding:!!p.holding,act:p.act,slide:p.slide,dive:p.dive,anim:p.anim,sentOff:!!p.sentOff,index:p.index,team:p.team,number:p.number,skin:p.skin,name:p.name,fullName:p.fullName});
 var FORMATIONS={
  '4-3-3':[[-49,0],[-29,-24],[-31,-8],[-31,8],[-29,24],[-11,-16],[-15,0],[-11,16],[17,-25],[22,0],[17,25]],
  '4-4-2':[[-49,0],[-29,-24],[-31,-8],[-31,8],[-29,24],[-7,-25],[-12,-8],[-12,8],[-7,25],[20,-8],[20,8]],
@@ -205,6 +592,7 @@ var Football=class Football{
  constructor(o={}){
   this.cpuOnly=!!o.cpuOnly;this.awayFormation=FORMATIONS[o.awayFormation]?o.awayFormation:'4-3-3';this.awayDifficulty=clamp(o.awayDifficulty??o.difficulty??2,0,4);this.awayTactic=o.awayTactic||'balanced';this.seed=o.seed||Date.now();this.difficulty=clamp(o.difficulty??2,0,4);this.cpuAdjust=o.cpuAdjust||{reaction:1,accuracy:1,press:1};this.halfSeconds=o.halfSeconds||120;this.tempo=o.tempo||'authentic';this.formation=o.formation||'4-3-3';this.tactic=o.tactic||'balanced';this.offside=o.offside!==false;
   this.weather=o.weather==='rainy'?'rainy':'sunny';this.autoSwitch=o.autoSwitch!==false;this.autoTimer=0;this.autoOwner=-2;this.squads=o.squads||null;this.bench=[0,1].map(t=>(o.squads?.[t]||[]).slice(11,15).map(p=>({...p})));this.referee={id:100,index:11,team:2,isReferee:true,number:0,x:-8,z:-9,vx:0,vz:0,fx:1,fz:0,phase:0,act:0,slide:0,dive:0,anim:0,signal:0};
+  this.subsUsed=[0,0];this.pendingSubs=[];this.subHistory=[];this.pendingKeeperSwaps=[null,null];this.squadRevision=0;for(const t of [0,1])this.bench[t].forEach((p,i)=>p.subKey=t+'-'+i);
   this.players=[];this.events=[];this.score=[0,0];this.stats=[0,1].map(()=>({shots:0,onTarget:0,passes:0,complete:0,possession:0,tackles:0,corners:0,fouls:0,saves:0}));
   this.half=1;this.elapsed=0;this.total=0;this.phase='kickoff';this.timer=1.6;this.aiTimer=0;this.owner=-1;this.selected=9;this.lastTouch=0;this.lastKicker=-1;this.flight=null;this.shot=null;this.ball={x:0,z:0,y:0.22,vx:0,vz:0,vy:0,spin:0};
   for(let t=0;t<2;t++)for(let i=0;i<11;i++)this.players.push({id:t*11+i,index:i,team:t,name:NAMES[t][i],number:[1,2,4,5,3,8,6,10,7,9,11][i],x:0,z:0,vx:0,vz:0,tx:0,tz:0,fx:t?-1:1,fz:0,stamina:1,cd:0,think:0,hold:0,anim:0,act:0,slide:0,dive:0,cards:0,pace:i===0?6.2:(i>7?7.25:6.7),phase:i*0.9});
@@ -230,9 +618,9 @@ var Football=class Football{
  kickoff(t){
   this.phase='kickoff';this.timer=1.6;this.restart=null;this.flight=null;this.shot=null;this.exemptNextPass=false;
   for(const p of this.players){p.holding=false;if(p.sentOff)continue;const f=FORMATIONS[this.formationFor(p.team)][p.index];p.x=f[0]*this.dir(p.team);p.z=f[1];if(p.index!==0)p.x=this.dir(p.team)*Math.min(-3,f[0]);p.vx=p.vz=0;p.fx=this.dir(p.team);p.fz=0;p.cd=0.25;p.hold=0;p.slide=0;p.tx=p.x;p.tz=p.z;}
-  const p=(this.players[t*11+9].sentOff?this.activePlayers(t).find(q=>q.index>0):this.players[t*11+9]);p.x=-this.dir(t)*0.8;p.z=0;this.owner=p.id;this.lastTouch=t;this.lastKicker=-1;this.selected=t===0?p.id:9;Object.assign(this.ball,{x:0,z:0,y:0.22,vx:0,vz:0,vy:0});
+  const p=this.activePlayers(t).find(q=>q.index===9)||this.activePlayers(t).find(q=>q.index>0);p.x=-this.dir(t)*0.8;p.z=0;this.owner=p.id;this.lastTouch=t;this.lastKicker=-1;this.selected=t===0?p.id:(this.activePlayers(0).find(q=>q.index===9)||this.activePlayers(0).find(q=>q.index>0)).id;Object.assign(this.ball,{x:0,z:0,y:0.22,vx:0,vz:0,vy:0});
  }
- continueHalf(){if(this.phase!=='halftime')return;this.half=2;this.elapsed=0;for(const p of this.players)p.stamina=clamp(p.stamina+.28,0,1);this.kickoff(1)}
+ continueHalf(){if(this.phase!=='halftime')return;this.applyPendingChanges?.();this.half=2;this.elapsed=0;for(const p of this.players)p.stamina=clamp(p.stamina+.28,0,1);this.kickoff(1)}
  isOffside(p){if(!this.offside||p.index===0)return false;const d=this.dir(p.team);if(p.x*d<=0||p.x*d<=this.ball.x*d+.15)return false;const defenders=this.activePlayers(1-p.team).map(q=>q.x*d).sort((a,b)=>b-a);return p.x*d>(defenders[1]??52.5)+.3}
  select(){this.autoTimer=.5;const b=this.ball;let options=this.players.filter(p=>p.team===0&&p.index!==0).sort((a,c)=>(dist(a,b)+(a.id===this.selected?3:0))-(dist(c,b)+(c.id===this.selected?3:0)));this.selected=options[0].id;this.emit('switch')}
  updateAutoSwitch(dt){
@@ -257,6 +645,7 @@ var Football=class Football{
   return best;
  }
  command(kind,aim={x:0,z:0},charge=.45){
+  this.applyPendingChanges?.();
   if(kind==='switch'){if(this.phase==='play')this.select();return}
   if(this.phase==='restart'&&this.restart.team===0&&this.timer<=0){if(['pass','through','lob','shoot'].includes(kind)){this.phase='play';this.restart=null;this.players[this.owner].cd=0;}}else if(this.phase!=='play')return;
   const p=this.players[this.selected];if(!p)return;
@@ -357,6 +746,7 @@ var Football=class Football{
   }
  }
  step(dt,input={}){
+  this.applyPendingChanges?.();
   dt=clamp(dt,0,.05);this.total+=dt;this.pickupDelay=Math.max(0,(this.pickupDelay||0)-dt);this.pressInput=!!input.press;
   for(const p of this.players){p.cd=Math.max(0,p.cd-dt);p.think=Math.max(0,p.think-dt);p.act=Math.max(0,p.act-dt);p.slide=Math.max(0,p.slide-dt);p.dive=Math.max(0,p.dive-dt);p.anim=Math.max(0,p.anim-dt);}
   this.updateReferee(dt);
@@ -399,7 +789,7 @@ var Football=class Football{
   // Swept whole-ball goal-line evaluation precedes pickup to avoid tunnelling.
   if(Math.abs(b.x)>52.72){
    const side=Math.sign(b.x),ratio=clamp((52.72*side-px)/(b.x-px||1),0,1),z=pz+(b.z-pz)*ratio,y=py+(b.y-py)*ratio;
-   if(Math.abs(z)<3.43&&y<2.22){const scorer=this.owner>=0?this.owner:this.shot?this.shot.player:this.lastKicker;const t=this.dir(0)===side?0:1;this.score[t]++;if(this.shot&&!this.shot.onTarget)this.stats[this.shot.team].onTarget++;this.phase='goal';this.timer=5.5;this.goalTeam=t;this.owner=-1;b.x=side*53.8;b.z=clamp(z,-3.3,3.3);b.vx=side*1;b.vz=0;this.emit('goal','GOAL',{team:t,scorer});return true;}
+   if(Math.abs(z)<3.43&&y<2.22){const scorer=this.owner>=0?this.owner:this.shot?this.shot.player:this.lastKicker;const t=this.dir(0)===side?0:1;this.score[t]++;if(this.shot&&!this.shot.onTarget)this.stats[this.shot.team].onTarget++;this.phase='goal';this.timer=5.5;this.goalTeam=t;this.owner=-1;b.x=side*53.8;b.z=clamp(z,-3.3,3.3);b.vx=side*1;b.vz=0;this.emit('goal','GOAL',{team:t,scorer,scorerName:this.players[scorer]?.name||''});return true;}
    const defend=this.dir(0)===-side?0:1;
    if(this.lastTouch===defend)this.setRestart('CORNER',1-defend,side*51.8,Math.sign(z||1)*33.5);else this.setRestart('GOAL KICK',defend,side*46,0);return true;
   }
@@ -436,6 +826,66 @@ var stepMatchFrames=function(game,delta,input,remainder=0){let a=remainder+clamp
 </script>
 <script>
 'use strict';
+Object.assign(Football.prototype,{
+ canSubstitute(){return ['restart','goal','halftime','kickoff'].includes(this.phase);},
+ queueSubstitution(team,outId,inKey){
+  if(![0,1].includes(team)||this.phase==='fulltime')return {ok:false,error:'Substitutions are unavailable.'};
+  const out=this.players[outId],incoming=this.bench[team].find(p=>p.subKey===inKey),previous=this.pendingSubs.find(q=>q.team===team&&q.outId===outId);
+  if(!out||out.team!==team||out.sentOff)return {ok:false,error:'A sent-off or inactive player cannot be replaced.'};
+  if(!incoming)return {ok:false,error:'This reserve is no longer available.'};
+  if(this.pendingKeeperSwaps[team]?.includes(outId))return {ok:false,error:'Cancel the queued goalkeeper switch first.'};
+  if(this.pendingSubs.some(q=>q.team===team&&q.inKey===inKey&&q!==previous))return {ok:false,error:'This reserve already has a pending substitution.'};
+  if(this.subsUsed[team]+this.pendingSubs.filter(q=>q.team===team).length-(previous?1:0)>=3)return {ok:false,error:'Maximum three substitutions per team per match.'};
+  if(previous)this.pendingSubs.splice(this.pendingSubs.indexOf(previous),1);
+  this.pendingSubs.push({team,outId,inKey,outName:out.fullName||out.name,outNumber:out.number});return {ok:true};
+ },
+ cancelSubstitution(team,outId){const index=this.pendingSubs.findIndex(q=>q.team===team&&q.outId===outId);if(index<0)return false;this.pendingSubs.splice(index,1);return true;},
+ swapPositions(aId,bId){
+  const a=this.players[aId],b=this.players[bId];if(this.phase==='fulltime'||!a||!b||a===b||a.team!==b.team||a.sentOff||b.sentOff)return {ok:false,error:'Choose two active players from the same team.'};
+  const keeperChange=a.index===0||b.index===0;
+  if(keeperChange){if(this.pendingSubs.some(q=>q.team===a.team&&[aId,bId].includes(q.outId)))return {ok:false,error:'Cancel these players’ pending substitutions first.'};this.pendingKeeperSwaps[a.team]=[aId,bId];return {ok:true,pending:true};}
+  if(this.pendingKeeperSwaps[a.team]?.some(id=>[aId,bId].includes(id)))return {ok:false,error:'Cancel the queued goalkeeper switch first.'};
+  const index=a.index;a.index=b.index;b.index=index;this.aiTimer=0;this.squadRevision++;this.emit('positions','POSITIONS SWAPPED',{team:a.team});return {ok:true,pending:false};
+ },
+ applyPendingChanges(){
+  if(!this.canSubstitute())return 0;let changed=0;
+  for(const team of [0,1]){const pair=this.pendingKeeperSwaps[team];if(!pair)continue;this.pendingKeeperSwaps[team]=null;const a=this.players[pair[0]],b=this.players[pair[1]];if(!a||!b||a.sentOff||b.sentOff)continue;
+   const index=a.index;a.index=b.index;b.index=index;for(const key of ['x','z','tx','tz']){const n=a[key];a[key]=b[key];b[key]=n;}for(const p of [a,b]){p.vx=p.vz=0;p.holding=false;}
+   this.squadRevision++;changed++;this.emit('positions','GOALKEEPER POSITIONS CHANGED',{team});
+  }
+  const requests=this.pendingSubs.splice(0);
+  for(const q of requests){const p=this.players[q.outId],index=this.bench[q.team].findIndex(b=>b.subKey===q.inKey);
+   if(!p||p.sentOff||index<0||this.subsUsed[q.team]>=3){this.emit('subcancel','SUBSTITUTION CANCELLED',{team:q.team,outName:q.outName});continue;}
+   const incoming=this.bench[q.team].splice(index,1)[0],out={name:p.fullName||p.name,display:p.name,number:p.number,role:p.role,skin:p.skin,stamina:p.stamina,cards:p.cards};
+   Object.assign(p,{fullName:incoming.name,name:(incoming.display||incoming.name).toUpperCase(),number:incoming.number,skin:incoming.skin??2,role:incoming.role,stamina:1,cards:0,holding:false,pace:incoming.pace??(p.index===0?6.2:p.index>7?7.25:6.7),hold:0,cd:.25,think:.2,vx:0,vz:0,act:0,slide:0,dive:0,anim:0});
+   this.subsUsed[q.team]++;this.squadRevision++;changed++;const entry={team:q.team,out,in:{name:incoming.name,number:incoming.number,role:incoming.role,skin:incoming.skin},minute:Math.floor((this.half-1)*45+this.elapsed/this.halfSeconds*45),half:this.half,slot:p.index};this.subHistory.push(entry);this.emit('substitution','SUBSTITUTION',entry);
+  }
+  if(changed){this.aiTimer=0;this.flight=null;this.shot=null;
+   if(this.phase==='restart'&&this.restart){const r={...this.restart};this.setRestart(r.kind,r.team,r.x,r.z);this.timer=1.8;}
+   else if(this.phase==='kickoff'){const team=this.players[this.owner]?.team??this.lastTouch;this.kickoff(team);this.timer=1.8;}
+  }
+  return changed;
+ }
+});
+
+</script><script>
+'use strict';
+var canManageTeam=(mode,team)=>mode==='football'&&team===0;
+var lineupPerson=p=>({name:p.fullName||p.name,display:p.display,number:p.number,role:p.role,skin:p.skin,pace:p.pace});
+var LineupDraft=class LineupDraft{
+ constructor(o){this.formation=FORMATIONS[o.formation]?o.formation:'4-3-3';this.awayFormation=FORMATIONS[o.awayFormation]?o.awayFormation:'4-3-3';this.players=[];this.bench=[[],[]];for(const t of [0,1]){const squad=o.squads[t];for(let i=0;i<11;i++)this.players.push({...squad[i],fullName:squad[i].name,id:t*11+i,index:i,team:t,stamina:1,cards:0});this.bench[t]=squad.slice(11,15).map((p,i)=>({...p,subKey:t+'-'+i}));}}
+ formationFor(t){return t===0?this.formation:this.awayFormation;}
+ isDefender(p){return p.index>0&&p.index<=Number(this.formationFor(p.team).split('-')[0]);}
+ isAttacker(p){return p.index>0&&FORMATIONS[this.formationFor(p.team)][p.index][0]>0;}
+ setFormation(t,f){if(![0,1].includes(t)||!FORMATIONS[f])return false;this[t===0?'formation':'awayFormation']=f;return true;}
+ replaceStarter(t,outId,inKey){const out=this.players[outId],i=this.bench[t]?.findIndex(p=>p.subKey===inKey);if(!out||out.team!==t||i===undefined||i<0)return {ok:false,error:'Choose a starter and reserve from the same team.'};const incoming=this.bench[t][i],previous=lineupPerson(out);Object.assign(out,lineupPerson(incoming),{fullName:incoming.name});this.bench[t][i]={...previous,subKey:inKey};return {ok:true};}
+ swapPositions(aId,bId){const a=this.players[aId],b=this.players[bId];if(!a||!b||a===b||a.team!==b.team)return {ok:false,error:'Choose two starters from the same team.'};const i=a.index;a.index=b.index;b.index=i;return {ok:true,pending:false};}
+ exportSquads(){return [0,1].map(t=>[...this.players.filter(p=>p.team===t).sort((a,b)=>a.index-b.index).map(lineupPerson),...this.bench[t].map(lineupPerson)]);}
+};
+
+</script>
+<script>
+'use strict';
 var CONTROL_ACTIONS=[];
 (function(){
  const add=(id,label,scope,canonical,primary=canonical,secondary=null)=>CONTROL_ACTIONS.push({id,label,scope:scope.split(' '),canonical,defaults:[primary,secondary]});
@@ -463,6 +913,25 @@ var GameBindings=class GameBindings{
  label(id,slot=0){return keyDisplay(this.map[id]?.[slot]);}
  serialize(){return {version:1,bindings:this.copy()};}
 };
+
+</script><script>
+'use strict';
+var phoneControlsNeeded=o=>!!(o.touchPoints>0&&(o.mobileHint||/Android|iPhone|iPad|iPod/i.test(o.userAgent||'')||o.coarse&&Math.min(o.width,o.height)<=900));
+var requiresLandscape=(enabled,width,height)=>!!enabled&&height>width;
+var TouchInputState=class TouchInputState{
+ constructor(){this.clear();}
+ clear(){this.look=null;this.stick=null;this.axes={x:0,y:0};this.buttons={};}
+ beginStick(id,x,y){if(this.look?.id===id)return false;if(this.stick&&this.stick.id!==id)return false;this.stick={id,x,y};this.axes={x:0,y:0};return true;}
+ moveStick(id,x,y,radius){if(!this.stick||this.stick.id!==id)return;const dx=(x-this.stick.x)/Math.max(1,radius),dy=(y-this.stick.y)/Math.max(1,radius),n=Math.hypot(dx,dy);if(n<.14){this.axes={x:0,y:0};return;}const strength=Math.min(1,(n-.14)/.86);this.axes={x:dx/n*strength,y:dy/n*strength};}
+ beginLook(id,x){if(this.stick?.id===id||this.buttons[id]||this.look&&this.look.id!==id)return false;this.look={id,x};return true;}
+ moveLook(id,x,width){if(this.look?.id!==id)return 0;const delta=-(x-this.look.x)/Math.max(1,width)*Math.PI*2;this.look.x=x;return delta;}
+ press(id,action){this.buttons[id]=action;}
+ held(action){return Object.values(this.buttons).includes(action);}
+ end(id){const action=this.buttons[id]||null;delete this.buttons[id];if(this.look?.id===id)this.look=null;if(this.stick?.id===id){this.stick=null;this.axes={x:0,y:0};}return action;}
+ player(){return {x:this.axes.x,z:this.axes.y,sprint:this.held('sprint'),press:this.held('press'),jockey:this.held('skill')};}
+ referee(){return {x:this.axes.x,z:-this.axes.y,turn:(this.held('lookRight')?1:0)-(this.held('lookLeft')?1:0),lookBall:this.held('face'),sprint:this.held('sprint')};}
+};
+var touchInput=new TouchInputState();
 
 </script><script>
 'use strict';
@@ -508,7 +977,7 @@ var RefereeFootball=class RefereeFootball extends Football{
   r.distance+=travelled;r.phase+=v*dt*1.9;r.stamina=clamp(r.stamina+dt*(sprint&&v>6?-.065:.045),.03,1);r.signal=Math.max(0,r.signal-dt);
   if(r.signal<=0)r.cardSignal=null;if(this.phase==='play'){this.refReport.workDistance+=travelled;this.refPlayTime+=dt;}
  }
- snapshot(){return {players:this.players.map(p=>({x:p.x,z:p.z,fx:p.fx,fz:p.fz,vx:p.vx,vz:p.vz,phase:p.phase,holding:!!p.holding,act:p.act,slide:p.slide,dive:p.dive,anim:p.anim,sentOff:!!p.sentOff})),ball:{...this.ball},referee:{...this.referee}};}
+ snapshot(){return {players:this.players.map(playerFrame),ball:{...this.ball},referee:{...this.referee}};}
  recordFrame(){const f=this.snapshot();this.frames.push(f);if(this.frames.length>48)this.frames.shift();return f;}
  positionAt(x,z){
   const r=this.referee,d=Math.hypot(r.x-x,r.z-z);let obstructed=false;for(const p of this.activePlayers()){const n=(x-r.x)**2+(z-r.z)**2,t=clamp(((p.x-r.x)*(x-r.x)+(p.z-r.z)*(z-r.z))/(n||1),0,1);if(t>.12&&t<.85&&Math.hypot(p.x-r.x-(x-r.x)*t,p.z-r.z-(z-r.z)*t)<.65){obstructed=true;break;}}
@@ -544,7 +1013,7 @@ var RefereeFootball=class RefereeFootball extends Football{
   const p=this.players[id];if(!p||p.sentOff||card==='none')return;this.referee.signal=1.6;this.referee.cardSignal=card;
   if(card==='yellow'){p.cards++;this.refReport.yellows++;if(p.cards>=2){p.sentOff=true;this.refReport.reds++;this.referee.cardSignal='red';}}
   if(card==='red'){p.sentOff=true;this.refReport.reds++;}
-  if(p.sentOff){p.vx=p.vz=0;if(this.owner===p.id)this.owner=-1;this.emit('card','SENT OFF',{player:p.id,card:'red'});}else this.emit('card','CAUTION',{player:p.id,card:'yellow'});this.checkAbandon();
+  if(p.sentOff){p.vx=p.vz=0;if(this.owner===p.id)this.owner=-1;this.emit('card','SENT OFF',{player:p.id,card:'red',playerName:p.name});}else this.emit('card','CAUTION',{player:p.id,card:'yellow',playerName:p.name});this.checkAbandon();
  }
  checkAbandon(){if(this.activePlayers(0).length>=7&&this.activePlayers(1).length>=7)return false;this.phase='fulltime';this.advantage=null;if(!this.refReport.abandoned){this.refReport.abandoned=true;this.emit('whistle','MATCH ABANDONED');}return true;}
  awardFoul(inc,forcePenalty=false){if(this.refReport.abandoned)return;const penalty=forcePenalty||inc.x*this.dir(inc.beneficiary)>=36&&Math.abs(inc.z)<=20.16;this.stats[1-inc.beneficiary].fouls++;this.setRestart(penalty?'PENALTY':'FREE KICK',inc.beneficiary,penalty?this.dir(inc.beneficiary)*41.5:inc.x,penalty?0:inc.z);}
@@ -668,10 +1137,20 @@ var FootballView=class FootballView{
   if(!this.actorMaterial)this.actorMaterial=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.8,metalness:.02});group.add(new THREE.Mesh(geo,this.actorMaterial));
  }
  setTeams(home,away,game){
+  this.homeKit=home;this.awayKit=away;
   for(const m of this.meshes){this.scene.remove(m.root);m.root.traverse(o=>{if(!o.isMesh)return;if(!Object.values(this.geo).includes(o.geometry))o.geometry.dispose();if(o.material.map){o.material.map.dispose();o.material.dispose();}else if(o.material!==this.actorMaterial&&!Object.values(this.mats).includes(o.material))o.material.dispose();});}this.meshes=[];
   for(const p of game.players){const team=p.team===0?home:away;const m=this.makePlayer(p,team.color,team.shorts,p.skin??(p.index*3+p.team)%5);this.meshes.push(m);this.scene.add(m.root);}
+  this.actorSignatures=game.players.map(p=>this.actorSignature(p));
   // Hero kit uses the selected club colours without changing the goalkeepers.
   this.hero.jersey.color.setHex(home.color);this.hero.pants.color.setHex(home.shorts);this.hero.sock.color.setHex(home.color);
+ }
+ actorSignature(p){return [p.team,p.index,p.number,p.skin].join(':');}
+ syncRoster(game,players){
+  if(!this.homeKit||!this.awayKit)return;
+  for(let i=0;i<game.players.length;i++){const source=players[i],p=source.index===undefined?game.players[i]:source,key=this.actorSignature(p);if(this.actorSignatures[i]===key)continue;
+   const old=this.meshes[i];this.scene.remove(old.root);old.root.traverse(o=>{if(!o.isMesh)return;if(!Object.values(this.geo).includes(o.geometry))o.geometry.dispose();if(o.material.map){o.material.map.dispose();o.material.dispose();}else if(o.material!==this.actorMaterial&&!Object.values(this.mats).includes(o.material))o.material.dispose();});
+   const kit=p.team===0?this.homeKit:this.awayKit,m=this.makePlayer({...game.players[i],...p},kit.color,kit.shorts,p.skin??(p.index*3+p.team)%5);this.meshes[i]=m;this.scene.add(m.root);this.actorSignatures[i]=key;
+  }
  }
  makeBall(){
   const c=document.createElement('canvas');c.width=256;c.height=128;const ct=c.getContext('2d');ct.fillStyle='#f3f3e5';ct.fillRect(0,0,256,128);ct.strokeStyle='#b0b8ad';ct.lineWidth=1.3;
@@ -712,6 +1191,7 @@ var FootballView=class FootballView{
  render(game,dt,menu=false,replay=null){
   this.t+=dt;this.frame++;this.menu=menu;const blend=Math.min(1,dt*4);
   let players=replay?replay.players:game.players,b=replay?replay.ball:game.ball;
+  this.syncRoster(game,players);
   this.hero.root.visible=menu;this.official.root.visible=!menu;this.refCard.visible=!menu&&!!game.referee.cardSignal&&game.referee.signal>0;this.refCard.material.color.setHex(game.referee.cardSignal==='red'?0xe8393c:0xf5db4c);this.contactRing.visible=!menu&&!!game.incident;if(game.incident)this.contactRing.position.set(game.incident.x,.05,game.incident.z);if(!menu)this.animatePlayer(this.official,replay?.referee||game.referee,dt);this.updateRain(dt,!menu);
 
   for(let i=0;i<this.meshes.length;i++){const m=this.meshes[i];m.root.visible=!menu&&!players[i].sentOff;if(!menu&&!players[i].sentOff)this.animatePlayer(m,players[i],dt);}
@@ -798,7 +1278,7 @@ var FootballCanvasView=class FootballCanvasView{
   if(game.mode==='referee'){this.renderReferee(game,dt,replay);return;}
   this.pitch();for(const s of [-1,1])this.goal(s);
   const order=players.map((p,i)=>({p,i})).sort((a,b)=>a.p.z-b.p.z);let drawnBall=false;
-  for(const {p,i} of order){if(p.sentOff)continue;if(!drawnBall&&p.z>b.z){this.drawBall(b);drawnBall=true;}const pos=this.project(p.x,0,p.z);if(pos.x<-30||pos.x>w+30)continue;this.person(pos.x,pos.y,pos.scale*1.15,{...p,index:game.players[i].index,team:game.players[i].team,number:game.players[i].number,skin:game.players[i].skin});if(i===game.selected&&!replay){c.strokeStyle='#b8f36d';c.lineWidth=1.5;c.beginPath();c.ellipse(pos.x,pos.y,pos.scale*.65,pos.scale*.26,0,0,7);c.stroke();c.fillStyle='#b8f36d';c.beginPath();c.moveTo(pos.x-4,pos.y-pos.scale*2.65);c.lineTo(pos.x+4,pos.y-pos.scale*2.65);c.lineTo(pos.x,pos.y-pos.scale*2.3);c.fill();}}
+  for(const {p,i} of order){if(p.sentOff)continue;if(!drawnBall&&p.z>b.z){this.drawBall(b);drawnBall=true;}const pos=this.project(p.x,0,p.z);if(pos.x<-30||pos.x>w+30)continue;this.person(pos.x,pos.y,pos.scale*1.15,{...p,index:p.index??game.players[i].index,team:p.team??game.players[i].team,number:p.number??game.players[i].number,skin:p.skin??game.players[i].skin});if(i===game.selected&&!replay){c.strokeStyle='#b8f36d';c.lineWidth=1.5;c.beginPath();c.ellipse(pos.x,pos.y,pos.scale*.65,pos.scale*.26,0,0,7);c.stroke();c.fillStyle='#b8f36d';c.beginPath();c.moveTo(pos.x-4,pos.y-pos.scale*2.65);c.lineTo(pos.x+4,pos.y-pos.scale*2.65);c.lineTo(pos.x,pos.y-pos.scale*2.3);c.fill();}}
   if(!drawnBall)this.drawBall(b);const ref=replay?.referee||game.referee;if(ref){const pr=this.project(ref.x,0,ref.z);this.person(pr.x,pr.y,pr.scale*1.15,ref);}
   if(this.weather==='rainy'){c.strokeStyle='#d9e7f06a';c.lineWidth=1;c.beginPath();for(let i=0;i<125;i++){const x=(i*173+this.t*90)%w,y=(i*83+this.t*720)%h;c.moveTo(x,y);c.lineTo(x-3,y+14);}c.stroke();}
  }
@@ -822,7 +1302,7 @@ Object.assign(FootballCanvasView.prototype,{
   const c=this.ctx,w=this.w,h=this.h,review=game.phase==='var',ref=replay?.referee||game.referee,pose=RefRenderMath.pose(game.referee,review?game.incident:null,this.reviewAngle||0,this.refRaised);
   this.chase=RefRenderMath.basis(pose);this.fl=h/(2*Math.tan(pose.fov*Math.PI/360));this.pitch();for(const s of [-1,1])this.goal(s);
   const players=replay?.players||game.players,b=replay?.ball||game.ball,actors=[];
-  players.forEach((p,i)=>{if(!p.sentOff){const q=this.project(p.x,0,p.z);actors.push({p:{...p,index:game.players[i].index,team:game.players[i].team,number:game.players[i].number,skin:game.players[i].skin},q});}});
+  players.forEach((p,i)=>{if(!p.sentOff){const q=this.project(p.x,0,p.z);actors.push({p:{...p,index:p.index??game.players[i].index,team:p.team??game.players[i].team,number:p.number??game.players[i].number,skin:p.skin??game.players[i].skin},q});}});
   const rp=this.project(ref.x,0,ref.z);actors.push({p:{...ref,...RefRenderMath.orientation(ref,pose),isReferee:true},q:rp});
   const bp=this.project(b.x,b.y,b.z);actors.push({ball:b,q:bp});actors.sort((a,b)=>b.q.depth-a.q.depth);
   if(game.incident){const inc=game.incident;this.circle(inc.x,inc.z,1.05);}
@@ -834,7 +1314,7 @@ Object.assign(FootballCanvasView.prototype,{
 </script><script>
 'use strict';
 var refUI={incident:0,phase:'',frame:0,playing:true,speed:.5,verdictTime:0,book:false,varHidden:false};
-function refereeInput(){if(match.phase==='var')return {};return {x:(keys.KeyD?1:0)-(keys.KeyA?1:0),z:(keys.KeyW||keys.ArrowUp?1:0)-(keys.KeyS||keys.ArrowDown?1:0),turn:(keys.KeyE||keys.ArrowRight?1:0)-(keys.KeyQ||keys.ArrowLeft?1:0),lookBall:!!keys.KeyR,sprint:!!(keys.ShiftLeft||keys.ShiftRight)};}
+function refereeInput(){if(match.phase==='var')return {};const t=mobileMovement();return {x:(keys.KeyD?1:0)-(keys.KeyA?1:0)+t.x,z:(keys.KeyW||keys.ArrowUp?1:0)-(keys.KeyS||keys.ArrowDown?1:0)+t.z,turn:(keys.KeyE||keys.ArrowRight?1:0)-(keys.KeyQ||keys.ArrowLeft?1:0)+t.turn,lookBall:!!keys.KeyR||t.lookBall,sprint:!!(keys.ShiftLeft||keys.ShiftRight)||t.sprint};}
 function initRefUi(){
  refUI={incident:0,phase:'',frame:0,playing:true,speed:.5,verdictTime:0,book:false,varHidden:false};view.reviewAngle=0;view.refRaised=false;document.body.classList.toggle('ref-mode',chosenMode==='referee');
  $('refHud').classList.toggle('hidden',chosenMode!=='referee');for(const id of ['refIncident','refVar','varRestore','refVerdict','refCasebook','refAdvantage'])$(id).classList.add('hidden');
@@ -879,13 +1359,14 @@ function refReplayFrame(dt){
 function updateRefUiTime(dt){if(refUI.verdictTime>0){refUI.verdictTime-=dt;if(refUI.verdictTime<=0)$('refVerdict').classList.add('hidden');}}
 function handleRefEvent(e){
  if(match.mode!=='referee')return;
- if(e.type==='refincident'){audio.tone(740,.15,.1,audio.fx,'sine');refUI.book=false;$('refCasebook').classList.add('hidden');}
+ if(e.type==='refincident'){if(mobileState.enabled)phoneNotices.discard(['decision','card','toast']);audio.tone(740,.15,.1,audio.fx,'sine');refUI.book=false;$('refCasebook').classList.add('hidden');}
  if(e.type==='var'){audio.tone(510,.18,.07,audio.fx,'sine');}
- if(e.type==='card'){toast((e.card==='red'?'RED CARD · ':'YELLOW CARD · ')+match.players[e.player].name);}
+ if(e.type==='card'){toast((e.card==='red'?'RED CARD · ':'YELLOW CARD · ')+(e.playerName||match.players[e.player].name),{kind:'card',priority:2,duration:1.8});}
  if(e.type==='advantage')toast(e.text);
  if(e.type==='judgment'){
+  if(mobileState.enabled){phoneNotices.push({kind:'decision',priority:3,title:(e.correct?'CORRECT DECISION':'DECISION REVIEW')+' · '+(e.points>=0?'+':'')+e.points,detail:'Position '+e.position+'/100 · '+e.distance+' m'+(match.phase==='restart'?' · '+match.restart.kind:''),tone:e.correct?'good':'bad',duration:2.2});refUI.verdictTime=0;$('refVerdict').classList.add('hidden');}else{
   $('refVerdict').classList.remove('hidden');$('refVerdict').classList.toggle('bad',!e.correct);$('refVerdict').innerHTML='<b>'+(e.correct?'CORRECT DECISION':'DECISION REVIEW')+' · '+(e.points>=0?'+':'')+e.points+'</b><small>Position '+e.position+'/100 · '+e.distance+' m from contact</small>';
-  refUI.verdictTime=3.5;audio.tone(e.correct?780:220,.2,.08,audio.fx,'sine');
+  refUI.verdictTime=3.5;};audio.tone(e.correct?780:220,.2,.08,audio.fx,'sine');
  }
 }
 function handleRefKey(e){
@@ -944,12 +1425,187 @@ function refreshControlLabels(){
  for(const b of document.querySelectorAll('[data-ref-decision]'))b.querySelector('kbd').textContent=bindings.label(choices[b.dataset.refDecision]);
  $('refVAR').querySelector('kbd').textContent=bindings.label('refVAR');$('refWhistle').textContent=bindings.label('refWhistle')+' · WHISTLE';$('refBookButton').textContent=bindings.label('refBook')+' · CASEBOOK';
  $('varHide').textContent=bindings.label('varHide')+' · HIDE';$('varRestore').textContent=bindings.label('varHide')+' · SHOW VAR CONTROLS';$('varContact').textContent=bindings.label('varContact')+' · CONTACT FRAME';$('varReturn').querySelector('span').textContent=bindings.label('varReturn')+' ↵';
- const names=['TOUCHLINE','END LINE','OVERHEAD'];for(const b of document.querySelectorAll('[data-var-angle]'))b.textContent=bindings.label('varAngle'+(Number(b.dataset.varAngle)+1))+' · '+names[Number(b.dataset.varAngle)];
+ if(mobileState.enabled){$('refWhistle').textContent='WHISTLE';$('refBookButton').textContent='CASEBOOK';$('varHide').textContent='HIDE';$('varRestore').textContent='SHOW VAR CONTROLS';$('varContact').textContent='CONTACT FRAME';$('varReturn').querySelector('span').textContent='→';}
+ const names=['TOUCHLINE','END LINE','OVERHEAD'];for(const b of document.querySelectorAll('[data-var-angle]'))b.textContent=(mobileState.enabled?'':bindings.label('varAngle'+(Number(b.dataset.varAngle)+1))+' · ')+names[Number(b.dataset.varAngle)];
 }
 function installControlsUI(){
  try{bindings=new GameBindings(JSON.parse(localStorage.getItem('matchday26-bindings-v1')||'null'));}catch(e){bindings=new GameBindings();}
  for(const b of document.querySelectorAll('[data-binding-tab]'))b.onclick=()=>{bindingTab=b.dataset.bindingTab;bindingCapture=null;bindingStatus('Click a key to customize it.');renderBindings();};
  $('resetBindings').onclick=()=>{bindingCapture=null;bindings.reset();clearInput();saveBindings();bindingStatus('Default controls restored.');renderBindings();refreshControlLabels();};renderBindings();
+}
+
+</script>
+<script>
+'use strict';
+var teamUI={team:0,selected:null,announcements:[],announcement:null,timer:0};
+var teamDrag=null,teamClickBlockedUntil=0;
+function clearTeamDrag(){if(teamDrag?.ghost)teamDrag.ghost.remove();teamDrag=null;for(const el of document.querySelectorAll('.team-drop'))el.classList.remove('team-drop');}
+function teamDragTarget(x,y){const el=document.elementFromPoint(x,y)?.closest('[data-team-type="field"]');return el?{type:'field',id:Number(el.dataset.teamId),team:teamUI.team,element:el}:null;}
+function teamEditable(team){return canManageTeam(chosenMode,team);}
+function managementModel(){return state==='setup'?getPreparationDraft():match;}
+function teamMessage(text,error=false){$('teamStatus').textContent=text;$('teamStatus').classList.toggle('team-error',error);}
+function openTeamManagement(team=0){if(!['setup','paused'].includes(state))return;clearTeamDrag();teamUI.team=team===1?1:0;teamUI.selected=null;openModal('teamManagement');teamMessage(!teamEditable(teamUI.team)?'Squad inspection only. Team management belongs to the CPU.':state==='setup'?'Drag a reserve onto a starter to set your starting XI, or swap two starters. Changes apply immediately.':'Drag a reserve onto a player to queue a substitution. Drag two starters to swap positions.');renderTeamManagement();}
+function managementSource(type,id){return {type,id,team:teamUI.team};}
+function teamCard(p,bench=false){
+ const m=managementModel(),id=bench?p.subKey:p.id,pending=(m.pendingSubs||[]).find(q=>q.team===teamUI.team&&(bench?q.inKey===id:q.outId===id)),incoming=pending?m.bench[teamUI.team].find(q=>q.subKey===pending.inKey):null;
+ const selected=teamUI.selected?.type===(bench?'bench':'field')&&String(teamUI.selected.id)===String(id),editable=teamEditable(teamUI.team)&&!p.sentOff;
+ const name=p.fullName||p.name,short=name.split(' ').slice(-2).join(' '),fitness=bench?100:Math.round(p.stamina*100),slot=bench?p.role:p.index===0?'GK':m.isDefender(p)?'DF':m.isAttacker(p)?'FW':'MF';
+ return '<button type="button" class="team-player '+(bench?'reserve-player ':'')+(pending?'pending ':'')+(selected?'chosen ':'')+(p.sentOff?'dismissed':'')+'" draggable="false" data-team-type="'+(bench?'bench':'field')+'" data-team-id="'+id+'" aria-label="'+(bench?'Reserve ':'On pitch ')+name+' number '+p.number+'" '+(p.sentOff?'disabled':'')+'><span class="team-shirt">'+p.number+'</span><b>'+short+'</b><small>'+slot+' · '+fitness+'%'+(p.cards?' · '+p.cards+' YC':'')+'</small>'+(p.sentOff?'<em>SENT OFF</em>':pending?'<em>'+(bench?'QUEUED':'IN: '+incoming?.name.split(' ').slice(-1)[0])+'</em>':'')+'<i class="team-fitness"><span style="width:'+fitness+'%"></span></i></button>';
+}
+function renderTeamManagement(){
+ const m=managementModel();if(!m)return;const pre=state==='setup',t=teamUI.team,editable=teamEditable(t),club=CLUBS[t===0?settings.home:settings.away],formation=m.formationFor(t);$('teamManagementTitle').textContent=!editable?'SQUAD INSPECTION.':pre?'PICK YOUR STARTERS.':'MAKE THE CHANGE.';$('teamManagement').querySelector('.panel').classList.toggle('read-only',!editable);$('teamManagement').querySelector('.panel').classList.toggle('pre-match',pre);$('teamDragHint').textContent=editable?'DRAG TO SWAP':'VIEW ONLY';$('teamReserveHint').textContent=editable?(pre?'CHOOSE STARTERS':'DRAG ONTO THE PITCH'):'CPU RESERVES';$('teamLimitNote').textContent=!editable?'Squad inspection only. The CPU controls formation and player changes.':pre?'Choose your starting XI freely before kickoff. Your three match substitutions remain available.':'Maximum three substitutions per team per match. Changes enter at the next stoppage after resuming. Dismissed players cannot be replaced.';
+ $('teamHome').classList.toggle('active',t===0);$('teamAway').classList.toggle('active',t===1);$('teamClub').textContent=club.name.toUpperCase();$('teamFormation').value=formation;$('teamFormation').disabled=!editable;
+ const queued=(m.pendingSubs||[]).filter(q=>q.team===t);$('teamSubCount').textContent=pre?(editable?'STARTING XI · 3 MATCH SUBS AVAILABLE':'CPU LINEUP · VIEW ONLY'):(editable?m.subsUsed[t]+' / 3 USED · '+queued.length+' QUEUED':'CPU LINEUP · VIEW ONLY');$('teamEditNote').textContent=editable?'Select or drag a player, then choose the destination. Position swaps use no substitutions.':'View only. Formation and player changes are controlled by the CPU.';
+ $('teamPitchPlayers').innerHTML=m.players.filter(p=>p.team===t).map(p=>{const pos=FORMATIONS[formation][p.index];return '<div class="team-position" style="left:'+(50+pos[1]*1.25)+'%;top:'+clamp(50-pos[0]*.79,6,91)+'%">'+teamCard(p)+'</div>';}).join('');
+ $('teamBench').innerHTML=m.bench[t].length?m.bench[t].map(p=>teamCard(p,true)).join(''):'<p class="team-empty">No unused reserves remaining.</p>';
+ $('teamPending').innerHTML=pre?'<p class="team-empty">Starting lineup changes apply immediately.</p>':queued.map(q=>{const incoming=m.bench[t].find(b=>b.subKey===q.inKey);return '<div class="pending-sub"><div><span class="sub-out">↓ OUT · #'+q.outNumber+' '+q.outName+'</span><span class="sub-in">↑ IN · #'+incoming?.number+' '+incoming?.name+'</span></div><button data-cancel-sub="'+q.outId+'" aria-label="Cancel substitution for '+q.outName+'">×</button></div>';}).join('')+(m.pendingKeeperSwaps?.[t]?'<div class="pending-sub"><div><span>GOALKEEPER POSITION SWITCH</span><small>Waiting for the next stoppage</small></div><button id="cancelKeeperSwap" aria-label="Cancel goalkeeper position switch">×</button></div>':'')||'<p class="team-empty">No pending changes. Substitutions enter at the next stoppage after you resume.</p>';
+ $('teamPrevious').innerHTML=(m.subHistory||[]).filter(e=>e.team===t).map(e=>'<div class="team-history">'+e.minute+'′ <span class="sub-out">↓ '+e.out.name+'</span><span class="sub-in">↑ '+e.in.name+'</span></div>').join('');
+ for(const card of document.querySelectorAll('[data-team-type]')){
+  const source=managementSource(card.dataset.teamType,card.dataset.teamType==='field'?Number(card.dataset.teamId):card.dataset.teamId);
+  card.onclick=()=>{if(performance.now()>teamClickBlockedUntil)activateTeamCard(source);};
+  card.onpointerdown=e=>{if(!editable||e.button!==0)return;clearTeamDrag();teamDrag={source,x:e.clientX,y:e.clientY,moving:false};try{card.setPointerCapture(e.pointerId);}catch{}};
+  card.onpointermove=e=>{const drag=teamDrag;if(!drag||drag.source!==source)return;if(!drag.moving&&Math.hypot(e.clientX-drag.x,e.clientY-drag.y)<6)return;
+   e.preventDefault();if(!drag.moving){drag.moving=true;drag.ghost=card.cloneNode(true);drag.ghost.classList.add('team-drag-ghost');drag.ghost.removeAttribute('id');drag.ghost.removeAttribute('aria-label');drag.ghost.setAttribute('aria-hidden','true');document.body.appendChild(drag.ghost);}
+   drag.ghost.style.left=e.clientX+'px';drag.ghost.style.top=e.clientY+'px';for(const el of document.querySelectorAll('.team-drop'))el.classList.remove('team-drop');const target=teamDragTarget(e.clientX,e.clientY);if(target&&!(source.type==='field'&&source.id===target.id))target.element.classList.add('team-drop');
+  };
+  card.onpointerup=e=>{if(!teamDrag||teamDrag.source!==source)return;const moving=teamDrag.moving,target=teamDragTarget(e.clientX,e.clientY);clearTeamDrag();if(moving){e.preventDefault();e.stopPropagation();teamClickBlockedUntil=performance.now()+150;if(target)dropTeamPlayer(source,target);}};
+  card.onpointercancel=clearTeamDrag;
+  card.ondragstart=e=>{if(!editable){e.preventDefault();return;}teamUI.selected=source;e.dataTransfer.setData('text/plain',JSON.stringify(source));e.dataTransfer.effectAllowed='move';card.classList.add('chosen');};
+  card.ondragend=()=>{for(const el of document.querySelectorAll('.team-drop'))el.classList.remove('team-drop');};
+  if(source.type==='field'){card.ondragover=e=>{if(editable){e.preventDefault();card.classList.add('team-drop');e.dataTransfer.dropEffect='move';}};card.ondragleave=()=>card.classList.remove('team-drop');card.ondrop=e=>{e.preventDefault();card.classList.remove('team-drop');try{const dragged=JSON.parse(e.dataTransfer.getData('text/plain'));dropTeamPlayer(dragged,source);}catch{teamMessage('Choose a player from this team.',true);}};}
+ }
+ for(const b of document.querySelectorAll('[data-cancel-sub]')){b.disabled=!editable;b.onclick=()=>{if(!editable||pre)return;m.cancelSubstitution(t,Number(b.dataset.cancelSub));teamUI.selected=null;teamMessage('Substitution cancelled.');renderTeamManagement();};}
+ if($('cancelKeeperSwap'))$('cancelKeeperSwap').onclick=()=>{if(!editable||pre)return;m.pendingKeeperSwaps[t]=null;teamMessage('Goalkeeper switch cancelled.');renderTeamManagement();};
+}
+function activateTeamCard(source){
+ if(!teamEditable(source.team))return;if(!teamUI.selected){teamUI.selected=source;teamMessage(source.type==='bench'?'Choose an active player to replace.':'Choose another active player to swap positions, or select a reserve.');renderTeamManagement();return;}
+ if(teamUI.selected.type===source.type&&String(teamUI.selected.id)===String(source.id)){teamUI.selected=null;renderTeamManagement();return;}
+ if(source.type==='bench'&&teamUI.selected.type==='field')dropTeamPlayer(source,teamUI.selected);
+ else if(source.type==='field')dropTeamPlayer(teamUI.selected,source);
+ else{teamUI.selected=source;renderTeamManagement();}
+}
+function dropTeamPlayer(source,target){
+ if(!['setup','paused'].includes(state)||modal!=='teamManagement'||!source||!target||source.team!==teamUI.team||target.team!==teamUI.team||target.type!=='field'||!teamEditable(teamUI.team))return;
+ const pre=state==='setup',m=managementModel(),result=source.type==='bench'?(pre?m.replaceStarter(teamUI.team,target.id,source.id):m.queueSubstitution(teamUI.team,target.id,source.id)):source.type==='field'?m.swapPositions(source.id,target.id):{ok:false,error:'Choose a player from this team.'};
+ teamUI.selected=null;teamMessage(result.ok?(pre?'Starting lineup updated. Your match substitutions remain available.':source.type==='bench'?'Substitution queued. Resume play; it will be made at the next stoppage.':result.pending?'Goalkeeper position switch queued for the next stoppage.':'Positions swapped. Players take up their new roles after you resume.'):result.error,!result.ok);if(result.ok)audio.click();if(pre)renderSetup();renderTeamManagement();
+}
+function handleTeamEvent(e){if(e.type==='substitution')teamUI.announcements.push(e);if(e.type==='subcancel')toast(e.outName+' · SUBSTITUTION CANCELLED');}
+function updateTeamUI(dt){
+ if(state!=='match')return;if(teamUI.timer>0)teamUI.timer-=dt;
+ if(teamUI.timer<=0&&teamUI.announcements.length){const e=teamUI.announcements.shift();teamUI.announcement=e;teamUI.timer=4;$('subTeam').textContent=CLUBS[e.team===0?settings.home:settings.away].name.toUpperCase()+' · '+e.minute+'′';$('subOut').textContent='#'+e.out.number+' '+e.out.name;$('subIn').textContent='#'+e.in.number+' '+e.in.name;if(mobileState.enabled){phoneNotices.push({kind:'substitution',priority:2,title:'SUBSTITUTION · '+CLUBS[e.team===0?settings.home:settings.away].abbr,detail:e.out.number+' '+e.out.name+' → '+e.in.number+' '+e.in.name,out:e.out,in:e.in,duration:3.2});$('subBoard').classList.add('hidden');}else $('subBoard').classList.remove('hidden');}
+ else if(teamUI.timer<=0)$('subBoard').classList.add('hidden');
+}
+function installTeamUI(){
+ $('pauseFormation').onclick=()=>openTeamManagement(0);$('closeTeamManagement').onclick=()=>closeModal('teamManagement');$('teamDone').onclick=()=>closeModal('teamManagement');
+ $('teamHome').onclick=()=>{teamUI.team=0;teamUI.selected=null;renderTeamManagement();};$('teamAway').onclick=()=>{teamUI.team=1;teamUI.selected=null;renderTeamManagement();};
+ $('teamFormation').onchange=()=>{if(!teamEditable(teamUI.team)){$('teamFormation').value=managementModel().formationFor(teamUI.team);return;}const m=managementModel(),f=$('teamFormation').value;if(!FORMATIONS[f])return;if(state==='setup'){m.setFormation(0,f);settings.formation=f;$('formation').value=f;renderSetup();}else{m.formation=f;$('liveFormation').value=f;m.aiTimer=0;}teamUI.selected=null;teamMessage('Formation changed. Your player assignments are preserved.');save();renderTeamManagement();};
+}
+function resetTeamUI(){clearTeamDrag();teamUI={team:0,selected:null,announcements:[],announcement:null,timer:0};$('teamManagement').classList.add('hidden');$('subBoard').classList.add('hidden');}
+
+</script><script>
+'use strict';
+var preparationDraft={key:'',model:null};
+function getPreparationDraft(){const key=[chosenMode,settings.home,settings.away].join(':');if(preparationDraft.key!==key){preparationDraft={key,model:new LineupDraft({squads:[arrangeSquad(CLUBS[settings.home],settings.formation),arrangeSquad(CLUBS[settings.away],chosenMode==='referee'?settings.awayFormation:'4-3-3')],formation:settings.formation,awayFormation:chosenMode==='referee'?settings.awayFormation:'4-3-3'})};}preparationDraft.model.setFormation(0,settings.formation);preparationDraft.model.setFormation(1,chosenMode==='referee'?settings.awayFormation:'4-3-3');return preparationDraft.model;}
+function canEditPreparationSetting(key){if(key==='awayFormation'||key==='homeTactic'||key==='awayTactic')return false;return key!=='formation'||canManageTeam(chosenMode,0);}
+function syncTeamPermissions(){const editable=canManageTeam(chosenMode,0);$('liveFormation').disabled=!editable;$('liveTactic').disabled=!editable;$('pauseTactics').classList.toggle('hidden',!editable);$('pauseFormation').textContent=editable?'Formation & substitutions':'View formations & squads';}
+function renderPreparationTeam(team){const m=getPreparationDraft(),squad=m.exportSquads()[team],f=m.formationFor(team),club=CLUBS[team?settings.away:settings.home],prefix=team?'cpu':'player',edit=canManageTeam(chosenMode,team);
+ $(prefix+'SquadHeading').innerHTML=clubImage(club)+'<div><span>'+(chosenMode==='referee'?(team?'AWAY CPU SQUAD':'HOME CPU SQUAD'):(team?'CPU SQUAD':'PLAYER SQUAD'))+'</span><h3>'+club.name+'</h3></div><b>'+f+'</b>';
+ $(team?'awayRosterList':'rosterList').innerHTML=squad.map((p,i)=>(i===0?'<div class="roster-heading">STARTING XI · 11</div>':i===11?'<div class="roster-heading">RESERVES · 4</div>':'')+'<div class="squad-player"><i>'+p.number+'</i><span>'+p.name+'</span><em>'+p.role+'</em></div>').join('');
+ $(team?'awayFormationBoard':'formationBoard').innerHTML=squad.slice(0,11).map((p,i)=>{const a=FORMATIONS[f][i];return '<div class="formation-player" style="left:'+(50+a[1]*1.2)+'%;top:'+clamp(50-a[0]*.8,9,87)+'%"><b>'+p.number+'</b>'+p.name.split(' ').slice(-1)[0].toUpperCase()+'</div>';}).join('');
+ $(team?'awayRoster':'homeRoster').textContent=edit?'FORMATION & STARTING XI':'VIEW FORMATION';
+}
+function renderSetup(){const ref=chosenMode==='referee',m=getPreparationDraft();for(const el of document.querySelectorAll('.ref-config'))el.classList.toggle('hidden',!ref);$('prepTitle').textContent=ref?'TAKE CHARGE.':'SET THE STAGE.';$('formationCaption').textContent=ref?'Home CPU formation':'Player formation';$('difficultyCaption').textContent=ref?'Home CPU difficulty':'CPU difficulty';for(const k of ['formation','awayFormation','homeTactic','awayTactic']){$(k).disabled=!canEditPreparationSetting(k);$(k).value=k==='awayFormation'?m.awayFormation:settings[k];}
+ $('prepFormation').textContent=ref?'VIEW FORMATIONS & SQUADS':'FORMATION & STARTING XI';$('prepModeNote').textContent=ref?'Both clubs play under CPU control. Team formations and lineups are view-only. Follow play and make your calls.':'Set your starting XI before kick-off. Match substitutions are counted only after the game starts.';$('prepMatchup').innerHTML='<b>'+CLUBS[settings.home].abbr+'</b><span>VS</span><b>'+CLUBS[settings.away].abbr+'</b>';
+ renderPreparationTeam(0);renderPreparationTeam(1);$('halfLengthNote').textContent='Two halves of '+(settings.duration/120)+' minute'+(settings.duration===120?'':'s')+' · '+(settings.weather==='rainy'?'Rainy':'Sunny');$('squadSources').innerHTML=[CLUBS[settings.home],CLUBS[settings.away]].map(t=>'<a href="'+t.source+'" target="_blank" rel="noopener">'+t.name+'</a>').join('');syncTeamPermissions();
+}
+
+</script><script>
+'use strict';
+var MatchNoticeQueue=class MatchNoticeQueue{
+ constructor(){this.clear();}
+ clear(){this.pending=[];this.current=null;this.serial=0;}
+ push(message){const n={kind:'toast',detail:'',priority:1,duration:2.2,tone:'neutral',...message,serial:this.serial++};n.remaining=n.duration;const same=q=>q.kind===n.kind&&q.title===n.title&&q.detail===n.detail;if(this.current&&same(this.current)||this.pending.some(same))return;if(this.current&&n.priority>this.current.priority){this.pending.push(this.current);this.current=null;}this.pending.push(n);while(this.pending.length>6){this.pending.sort((a,b)=>a.priority-b.priority||a.serial-b.serial);this.pending.shift();}}
+ discard(kinds){this.pending=this.pending.filter(n=>!kinds.includes(n.kind));if(this.current&&kinds.includes(this.current.kind))this.current=null;}
+ step(dt){if(this.current){this.current.remaining-=Math.max(0,dt);if(this.current.remaining<=0)this.current=null;}if(!this.current&&this.pending.length){this.pending.sort((a,b)=>b.priority-a.priority||a.serial-b.serial);this.current=this.pending.shift();}}
+};
+var phoneNotices=new MatchNoticeQueue(),phoneNoticeKey='';
+function resetPhoneNotices(){phoneNotices.clear();phoneNoticeKey='';$('phoneNotice')?.classList.add('hidden');}
+function syncPhoneNotices(dt){if(!mobileState.enabled)return;document.body.classList.toggle('phone-match',['match','paused'].includes(state));const visible=state==='match'&&!modal&&!mobileState.portrait&&!refUI.book&&!['incident','var','goal','fulltime'].includes(match.phase);if(visible)phoneNotices.step(dt);let n=phoneNotices.current;
+ if(!n&&match.phase==='kickoff')n={title:'KICK OFF',detail:chosenMode==='referee'?'BOTH TEAMS CPU · YOU ARE THE REFEREE':'YOU ATTACK '+(match.dir(0)>0?'→':'←'),tone:'neutral'};
+ if(!n&&match.phase==='restart')n={title:match.restart.kind,detail:CLUBS[match.restart.team===0?settings.home:settings.away].name.toUpperCase()+' · '+(chosenMode==='referee'||match.restart.team===1?'CPU RESTART':'PASS / CROSS / SHOOT TO RESTART'),tone:'neutral'};
+ if(!n&&match.advantage)n={title:'ADVANTAGE',detail:Math.ceil(match.advantage.remaining)+' SEC · PLAY CONTINUES',tone:'neutral'};
+ const on=visible&&!!n,key=[on,n?.title,n?.detail,n?.tone].join(':');if(key===phoneNoticeKey)return;phoneNoticeKey=key;$('phoneNotice').classList.toggle('hidden',!on);if(on){$('phoneNoticeTitle').textContent=n.title;$('phoneNoticeDetail').textContent=n.kind==='substitution'?'':n.detail||'';$('phoneNoticeSubs').classList.toggle('hidden',n.kind!=='substitution');if(n.kind==='substitution'){$('phoneNoticeSubOut').textContent='↓ OUT · #'+n.out.number+' '+n.out.name;$('phoneNoticeSubIn').textContent='↑ IN · #'+n.in.number+' '+n.in.name;}$('phoneNotice').classList.toggle('notice-bad',n.tone==='bad');$('phoneNotice').classList.toggle('notice-good',n.tone==='good');}
+}
+
+</script><script>
+'use strict';
+var mobileState={enabled:false,portrait:false,sprint:false,more:false,faceTime:0,key:'',requesting:false,blocked:true};
+function clearMobileInput(){touchInput.clear();mobileState.sprint=false;mobileState.more=false;mobileState.faceTime=0;if($('touchKnob'))$('touchKnob').style.transform='translate(-50%,-50%)';for(const b of document.querySelectorAll('#touchControls .pressed'))b.classList.remove('pressed');}
+function mobileMovement(){const a=chosenMode==='referee'?touchInput.referee():touchInput.player();if(!mobileState.enabled||mobileState.portrait||state!=='match'||modal||chosenMode==='referee'&&(refUI.book||['incident','var'].includes(match?.phase)))return {x:0,z:0,turn:0,sprint:false,press:false,jockey:false,lookBall:false};a.sprint=a.sprint||mobileState.sprint;if(chosenMode==='referee')a.lookBall=a.lookBall||mobileState.faceTime>0;return a;}
+function syncMobileViewport(){
+ if(!mobileState.enabled)return;const portrait=requiresLandscape(true,innerWidth,innerHeight);mobileState.portrait=portrait;document.body.classList.toggle('phone-portrait',portrait);$('rotateDevice').classList.toggle('hidden',!portrait);
+ if(portrait){clearInput();clearTeamDrag();if(state==='match')pause();}view?.resize();mobileState.key='';
+}
+async function requestMobileLandscape(){
+ if(!mobileState.enabled||mobileState.requesting)return;mobileState.requesting=true;
+ try{if(!document.fullscreenElement&&document.documentElement.requestFullscreen)try{await document.documentElement.requestFullscreen({navigationUI:'hide'});}catch{}
+  try{if(screen.orientation?.lock)await screen.orientation.lock('landscape');}catch{}
+ }finally{mobileState.requesting=false;if($('rotateHint'))$('rotateHint').textContent='Rotate your phone sideways. If needed, turn off your phone’s rotation lock.';syncMobileViewport();}
+}
+function toggleMobileFullscreen(){if(document.fullscreenElement&&document.exitFullscreen){document.exitFullscreen().catch(()=>{});return;}requestMobileLandscape();}
+function mobileActionDown(action){
+ if(!mobileState.enabled||mobileState.portrait||state!=='match'||modal)return;
+ audio.init();const a=aim();
+ if(action==='pause'){pause();return;}if(action==='fullscreen'){toggleMobileFullscreen();return;}
+ if(action==='sprint'){mobileState.sprint=!mobileState.sprint;mobileState.key='';return;}
+ if(action==='more'){mobileState.more=!mobileState.more;mobileState.key='';return;}
+ if(action==='face'){mobileState.faceTime=.6;return;}
+ if(action==='camera'){if(chosenMode==='referee')handleRefKey({code:'KeyC'});else cycleMatchCamera();return;}
+ if(action==='tactics'){cycleMatchTactics();return;}
+ if(action==='book'){toggleRefBook();return;}
+ if(action==='whistle'){match.whistle();handleEvents();return;}
+ if(chosenMode!=='football')return;
+ if(action==='shoot')beginMatchShot();
+ else if(action==='pass')match.command('pass',a);
+ else if(action==='through')match.command('through',a);
+ else if(action==='cross')match.command('lob',a);
+ else if(action==='switch')match.command('switch');
+ else if(action==='skill')match.command('skill',a);
+}
+function bindTouchAction(button){
+ const action=button.dataset.touchAction;
+ button.onpointerdown=e=>{if(e.button!==0||!mobileState.enabled)return;e.preventDefault();e.stopPropagation();const already=touchInput.held(action);touchInput.press(e.pointerId,action);button.classList.add('pressed');try{button.setPointerCapture(e.pointerId);}catch{}if(!already)mobileActionDown(action);};
+ const release=(e,cancel=false)=>{const held=touchInput.end(e.pointerId);if(!held)return;e.preventDefault();if(!touchInput.held(action))button.classList.remove('pressed');if(held==='shoot'&&!touchInput.held('shoot'))releaseMatchShot(cancel||state!=='match'||!!modal||mobileState.portrait);};
+ button.onpointerup=e=>release(e);button.onpointercancel=e=>release(e,true);button.onlostpointercapture=e=>release(e,true);
+ button.onclick=e=>{e.preventDefault();};
+}
+function syncMobileUI(dt=0){
+ if(!mobileState.enabled)return;mobileState.faceTime=Math.max(0,mobileState.faceTime-dt);
+ const active=state==='match'&&!modal&&!mobileState.portrait,scope=chosenMode==='referee'?'referee':'player',review=match?.phase==='var',incident=match?.phase==='incident',book=scope==='referee'&&refUI.book,own=match?.owner===match?.selected;
+ const blocked=!active||review||incident||book;if(blocked&&!mobileState.blocked)clearMobileInput();mobileState.blocked=blocked;
+ const key=[active,scope,review,incident,book,own,mobileState.sprint,mobileState.more].join(':');if(key===mobileState.key)return;mobileState.key=key;
+ $('touchControls').classList.toggle('hidden',!active);$('touchPlayArea').classList.toggle('hidden',review||incident||book);$('touchPlayerActions').classList.toggle('hidden',scope!=='player');$('touchRefActions').classList.toggle('hidden',scope!=='referee');$('touchMore').classList.toggle('hidden',!mobileState.more||scope!=='player');
+ $('touchPassLabel').textContent=own?'PASS':'TACKLE';$('touchShootLabel').textContent=own?'SHOOT':'SLIDE';for(const b of document.querySelectorAll('[data-touch-action="sprint"]')){b.classList.toggle('toggled',mobileState.sprint);b.setAttribute('aria-pressed',mobileState.sprint?'true':'false');}
+ document.body.classList.toggle('touch-review',active&&review);document.body.classList.toggle('touch-incident',active&&incident);
+}
+
+function canTouchLook(){return mobileState.enabled&&!mobileState.portrait&&state==='match'&&!modal&&chosenMode==='referee'&&match.phase!=='var'&&!refUI.book;}
+function installMobileLook(){
+ document.addEventListener('pointerdown',e=>{if(e.target!==$('game')||e.button!==0||!canTouchLook()||!touchInput.beginLook(e.pointerId,e.clientX))return;e.preventDefault();try{e.target.setPointerCapture(e.pointerId);}catch{}});
+ document.addEventListener('pointermove',e=>{if(touchInput.look?.id!==e.pointerId)return;if(!canTouchLook()){touchInput.end(e.pointerId);return;}e.preventDefault();match.referee.yaw+=touchInput.moveLook(e.pointerId,e.clientX,innerWidth);mobileState.faceTime=0;});
+ const end=e=>{if(touchInput.look?.id===e.pointerId)touchInput.end(e.pointerId);};document.addEventListener('pointerup',end);document.addEventListener('pointercancel',end);document.addEventListener('lostpointercapture',end);
+}
+
+function installMobileUI(){
+ mobileState.enabled=phoneControlsNeeded({touchPoints:navigator.maxTouchPoints||0,coarse:matchMedia('(pointer:coarse)').matches,mobileHint:!!navigator.userAgentData?.mobile,userAgent:navigator.userAgent,width:screen.width||innerWidth,height:screen.height||innerHeight});
+ document.body.classList.toggle('mobile',mobileState.enabled);$('touchGuide').classList.toggle('hidden',!mobileState.enabled);$('rotateDevice').classList.add('hidden');$('touchControls').classList.add('hidden');if(!mobileState.enabled)return;
+ document.querySelector('#menu .offline').textContent='OFFLINE EDITION · TOUCH';installMobileLook();$('pauseControls').textContent='Touch controls';$('phoneFullscreen').onclick=toggleMobileFullscreen;$('rotateFullscreen').onclick=requestMobileLandscape;
+ for(const b of document.querySelectorAll('[data-touch-action]'))bindTouchAction(b);
+ const stick=$('touchStick');
+ stick.onpointerdown=e=>{if(e.button!==0||state!=='match'||modal||mobileState.portrait)return;const r=stick.getBoundingClientRect();if(!touchInput.beginStick(e.pointerId,r.x+r.width/2,r.y+r.height/2))return;e.preventDefault();try{stick.setPointerCapture(e.pointerId);}catch{}stick.onpointermove(e);};
+ stick.onpointermove=e=>{if(touchInput.stick?.id!==e.pointerId)return;e.preventDefault();const r=stick.getBoundingClientRect();touchInput.moveStick(e.pointerId,e.clientX,e.clientY,r.width*.38);$('touchKnob').style.transform='translate(calc(-50% + '+touchInput.axes.x*r.width*.28+'px),calc(-50% + '+touchInput.axes.y*r.width*.28+'px))';};
+ const releaseStick=e=>{if(touchInput.stick?.id!==e.pointerId)return;touchInput.end(e.pointerId);$('touchKnob').style.transform='translate(-50%,-50%)';};stick.onpointerup=releaseStick;stick.onpointercancel=releaseStick;stick.onlostpointercapture=releaseStick;
+ window.addEventListener('resize',syncMobileViewport);screen.orientation?.addEventListener?.('change',syncMobileViewport);document.addEventListener('fullscreenchange',syncMobileViewport);window.visualViewport?.addEventListener('resize',()=>{if(requiresLandscape(true,innerWidth,innerHeight)!==mobileState.portrait)syncMobileViewport();});syncMobileViewport();
 }
 
 </script>
@@ -995,7 +1651,7 @@ const validSelects={home:CLUBS.map((_,i)=>i),away:CLUBS.map((_,i)=>i),difficulty
 for(const k of ['master','crowd','effects','music'])settings[k]=clamp(settings[k],0,100);for(const k of ['cpuReaction','cpuAccuracy','cpuPress'])settings[k]=clamp(settings[k],50,160);
 function save(){try{localStorage.setItem('matchday26-settings-v11',JSON.stringify(settings));}catch(e){}}
 function applyAudio(){audio.settings={master:settings.master/100,crowd:settings.crowd/100,effects:settings.effects/100,music:settings.music/100,muted:settings.muted};audio.apply();}
-function toast(text){$('toast').textContent=text;$('toast').classList.remove('hidden');toastTimer=2.4;}
+function toast(text,notice={}){if(mobileState.enabled&&['match','paused'].includes(state)){phoneNotices.push({title:text,...notice});return;}$('toast').textContent=text;$('toast').classList.remove('hidden');toastTimer=2.4;}
 var teamStage='player',rosterSide=0;
 const leagues={Spain:'Spanish League',France:'French League',Germany:'German League',Italy:'Italian League',England:'English League'};
 function teamsChanged(){if(settings.home===settings.away)settings.away=(settings.home+1)%CLUBS.length;if(view){if(view.software)view.setTeams(CLUBS[settings.home],CLUBS[settings.away],match);else{const h=CLUBS[settings.home];view.hero.jersey.color.setHex(h.color);view.hero.sock.color.setHex(h.color);view.hero.pants.color.setHex(h.shorts);}}save();}
@@ -1012,50 +1668,46 @@ function renderTeams(){
  const list=$(first?'homeList':'awayList');for(const el of list.querySelectorAll('[data-club]'))el.onclick=()=>chooseClub(Number(el.dataset.club));const row=list.querySelector('.current');if(row)row.scrollIntoView({block:'nearest'});teamsChanged();
 }
 function chooseClub(index){if(teamStage==='cpu'&&index===settings.home)return;settings[teamStage==='player'?'home':'away']=index;if(settings.home===settings.away)settings.away=(settings.home+1)%CLUBS.length;audio.click();renderTeams();}
-function showLobby(which){clearInput();modal=null;state=which;for(const id of ['menu','teams','preparation','hud','pause','result','controls','settings','event','replaytag','refHud','refIncident','refVar','varRestore','refCasebook'])$(id).classList.add('hidden');document.body.classList.remove('ref-mode');$(which==='setup'?'preparation':which).classList.remove('hidden');view?.setWeather('night');if(which==='menu')$('playGame').focus();if(which==='teams'){renderTeams();$('confirmHome').focus();}if(which==='setup'){renderSetup();$('start').focus();}save();}
-function beginTeamSelection(mode='football'){chosenMode=mode==='referee'?'referee':'football';audio.init();audio.click();teamStage='player';showLobby('teams');}
+function showLobby(which){resetPhoneNotices();clearInput();modal=null;state=which;for(const id of ['menu','teams','preparation','hud','pause','result','controls','settings','event','replaytag','refHud','refIncident','refVar','varRestore','refCasebook','teamManagement'])$(id).classList.add('hidden');document.body.classList.remove('ref-mode');$(which==='setup'?'preparation':which).classList.remove('hidden');view?.setWeather('night');if(which==='menu')$('playGame').focus();if(which==='teams'){renderTeams();$('confirmHome').focus();}if(which==='setup'){renderSetup();$('start').focus();}save();}
+function beginTeamSelection(mode='football'){if(mobileState.enabled)requestMobileLandscape();chosenMode=mode==='referee'?'referee':'football';audio.init();audio.click();teamStage='player';showLobby('teams');}
 function confirmPlayer(){audio.click();teamStage=teamStage==='player'?'cpu':'player';renderTeams();$(teamStage==='cpu'?'confirmAway':'confirmHome').focus();}
 function confirmCpu(){if(teamStage!=='cpu')return;audio.click();rosterSide=0;showLobby('setup');}
-function renderSetup(){
- const home=CLUBS[settings.home],away=CLUBS[settings.away],ref=chosenMode==='referee';for(const el of document.querySelectorAll('.ref-config'))el.classList.toggle('hidden',!ref);$('prepTitle').textContent=ref?'TAKE CHARGE.':'SET THE STAGE.';$('formationCaption').textContent=ref?'Home CPU formation':'Player formation';$('difficultyCaption').textContent=ref?'Home CPU difficulty':'CPU difficulty';$('homeRoster').textContent=ref?'HOME CPU SQUAD':'PLAYER SQUAD';$('awayRoster').textContent=ref?'AWAY CPU SQUAD':'CPU SQUAD';$('prepModeNote').textContent=ref?'You control the referee. Both clubs play under CPU control. Sprint to keep a clear view, make decisions and review incidents with VAR.':'Auto-switch chooses your nearest defender when the CPU has the ball. Keep possession with passing, through balls and crosses.';$('prepMatchup').innerHTML=[home,away].map((t,i)=>(i?'<span class="versus">VS</span>':'')+'<div class="prep-club">'+clubImage(t)+'<b>'+t.name+'</b><small>'+(ref?(i?'AWAY CPU':'HOME CPU'):(i?'CPU BOT':'PLAYER'))+'</small></div>').join('');
- const team=rosterSide?away:home,f=rosterSide?(ref?settings.awayFormation:'4-3-3'):settings.formation,players=arrangeSquad(team,f);$('formationLabel').textContent=f;$('lineupClub').textContent=team.name.toUpperCase();$('homeRoster').classList.toggle('active',rosterSide===0);$('awayRoster').classList.toggle('active',rosterSide===1);
- $('rosterList').innerHTML=players.map((p,i)=>(i===0?'<div class="roster-heading">STARTING XI</div>':i===11?'<div class="roster-heading">FOUR RESERVES</div>':'')+'<div class="squad-player"><i>'+p.number+'</i><span>'+p.name+'</span><em>'+p.role+'</em></div>').join('');
- $('formationBoard').innerHTML=players.slice(0,11).map((p,i)=>{const a=FORMATIONS[f][i];return '<div class="formation-player" style="left:'+(50+a[1]*1.2)+'%;top:'+clamp(50-a[0]*.85,8,93)+'%"><b>'+p.number+'</b>'+p.name.split(' ').slice(-1)[0].toUpperCase()+'</div>';}).join('');
- $('halfLengthNote').textContent='Two halves of '+(settings.duration/120)+' minute'+(settings.duration===120?'':'s')+' · '+(settings.weather==='rainy'?'Rainy conditions':'Sunny conditions');
- $('squadSources').innerHTML=CLUBS.map(t=>'<a href="'+t.source+'" target="_blank" rel="noopener">'+t.name+'</a>').join('');
-}
 for(const k of Object.keys(settings)){
  const el=$(k);if(!el)continue;if(el.type==='checkbox')el.checked=settings[k];else el.value=settings[k];const out=$(k+'Out');if(out)out.value=settings[k]+'%';
  el.addEventListener('input',()=>{
-  audio.init();if(el.type==='checkbox')settings[k]=el.checked;else if(['home','away','difficulty','awayDifficulty','duration','master','crowd','effects','music','cpuReaction','cpuAccuracy','cpuPress'].includes(k))settings[k]=Number(el.value);else settings[k]=el.value;
+  audio.init();if(!canEditPreparationSetting(k)){el.value=k==='awayFormation'?getPreparationDraft().awayFormation:settings[k];return;}if(el.type==='checkbox')settings[k]=el.checked;else if(['home','away','difficulty','awayDifficulty','duration','master','crowd','effects','music','cpuReaction','cpuAccuracy','cpuPress'].includes(k))settings[k]=Number(el.value);else settings[k]=el.value;
   if(out)out.value=settings[k]+'%';if(k==='home'||k==='away')teamsChanged();if(state==='setup')renderSetup();if(k==='quality'&&view){view.quality=settings.quality;view.resize();}if(k==='camera'&&view)view.mode=settings.camera;
   if(match){if(k==='tempo')match.tempo=settings.tempo;match.offside=settings.offside;match.cpuAdjust={reaction:settings.cpuReaction/100,accuracy:settings.cpuAccuracy/100,press:settings.cpuPress/100};}
   applyAudio();save();
  });
 }
-function makeMatch(){const ref=chosenMode==='referee',Ctor=ref?RefereeFootball:Football;return new Ctor({difficulty:settings.difficulty,awayDifficulty:ref?settings.awayDifficulty:settings.difficulty,halfSeconds:settings.duration/2,squads:[arrangeSquad(CLUBS[settings.home],settings.formation),arrangeSquad(CLUBS[settings.away],ref?settings.awayFormation:'4-3-3')],weather:settings.weather,formation:settings.formation,awayFormation:ref?settings.awayFormation:'4-3-3',tactic:ref?settings.homeTactic:'balanced',awayTactic:ref?settings.awayTactic:'balanced',tempo:settings.tempo,offside:settings.offside,cpuAdjust:{reaction:settings.cpuReaction/100,accuracy:settings.cpuAccuracy/100,press:settings.cpuPress/100}});}
-function aim(){return {x:(keys.KeyD||keys.ArrowRight?1:0)-(keys.KeyA||keys.ArrowLeft?1:0),z:(keys.KeyS||keys.ArrowDown?1:0)-(keys.KeyW||keys.ArrowUp?1:0)};}
-function clearInput(){keys={};bindings.clearHeld();shootCharge=null;$('power').classList.add('hidden');}
+function makeMatch(){const ref=chosenMode==='referee',Ctor=ref?RefereeFootball:Football;return new Ctor({difficulty:settings.difficulty,awayDifficulty:ref?settings.awayDifficulty:settings.difficulty,halfSeconds:settings.duration/2,squads:getPreparationDraft().exportSquads(),weather:settings.weather,formation:settings.formation,awayFormation:ref?settings.awayFormation:'4-3-3',tactic:ref?settings.homeTactic:'balanced',awayTactic:ref?settings.awayTactic:'balanced',tempo:settings.tempo,offside:settings.offside,cpuAdjust:{reaction:settings.cpuReaction/100,accuracy:settings.cpuAccuracy/100,press:settings.cpuPress/100}});}
+function aim(){const touch=mobileMovement();if(Math.hypot(touch.x,touch.z)>.01)return {x:touch.x,z:touch.z};return {x:(keys.KeyD||keys.ArrowRight?1:0)-(keys.KeyA||keys.ArrowLeft?1:0),z:(keys.KeyS||keys.ArrowDown?1:0)-(keys.KeyW||keys.ArrowUp?1:0)};}
+function clearInput(){keys={};bindings.clearHeld();clearMobileInput();shootCharge=null;$('power').classList.add('hidden');}
 function start(){
- if(!view)return;audio.init();audio.click();match=makeMatch();const kits=getMatchKits(CLUBS[settings.home],CLUBS[settings.away]);view.setTeams(kits.home,kits.away,match);view.mode=settings.camera;view.setWeather(settings.weather);$('weathertag').textContent=settings.weather==='rainy'?'RAINY ☂':'SUNNY ☀';view.cameraX=0;view.cameraZ=0;state='match';modal=null;for(const id of ['menu','teams','preparation','pause','controls','settings','result','event','replaytag'])$(id).classList.add('hidden');$('hud').classList.remove('hidden');clearInput();replayFrames=[];replayData=null;goalAge=0;accum=0;menuTime=0;
+ if(!view)return;resetPhoneNotices();audio.init();audio.click();match=makeMatch();const kits=getMatchKits(CLUBS[settings.home],CLUBS[settings.away]);view.setTeams(kits.home,kits.away,match);view.mode=settings.camera;view.setWeather(settings.weather);$('weathertag').textContent=settings.weather==='rainy'?'RAINY ☂':'SUNNY ☀';view.cameraX=0;view.cameraZ=0;state='match';modal=null;for(const id of ['menu','teams','preparation','pause','controls','settings','result','event','replaytag'])$(id).classList.add('hidden');$('hud').classList.remove('hidden');clearInput();replayFrames=[];replayData=null;goalAge=0;accum=0;menuTime=0;resetTeamUI();
  for(const [side,idx]of [['home',settings.home],['away',settings.away]]){$(side+'abbr').textContent=CLUBS[idx].abbr;$(side+'swatch').style.background='#'+(side==='home'?kits.home.color:kits.away.color).toString(16).padStart(6,'0');}
- $('liveFormation').value=settings.formation;$('liveTactic').value='balanced';$('hint').style.opacity='1';initRefUi();hud();save();
+ $('liveFormation').value=settings.formation;$('liveTactic').value='balanced';$('hint').style.opacity='1';initRefUi();syncTeamPermissions();hud();save();if(mobileState.enabled){requestMobileLandscape();syncMobileViewport();}
 }
 function openModal(id){if(id==='controls'){bindingTab=inputScope();bindingCapture=null;renderBindings();bindingStatus('Click a key to customize it.');}audio.init();audio.click();clearInput();if(state==='match')state='paused';$(id).classList.remove('hidden');modal=id;$(id).querySelector('button,select')?.focus();}
-function closeModal(id){if(id==='controls')cancelBindingCapture();audio.click();$(id).classList.add('hidden');modal=null;if(state==='paused'&&$('pause').classList.contains('hidden')){state='match';lastFrame=performance.now();}else if(state==='menu')$('playGame').focus();else if(state==='setup')$('start').focus();}
+function closeModal(id){if(id==='teamManagement'){clearTeamDrag();teamUI.selected=null;}if(id==='controls')cancelBindingCapture();audio.click();$(id).classList.add('hidden');modal=null;if(state==='paused'&&$('pause').classList.contains('hidden')){state='match';lastFrame=performance.now();}else if(state==='menu')$('playGame').focus();else if(state==='setup')$('start').focus();}
 function statsHTML(){
  const s=match.stats,poss=s[0].possession+s[1].possession,pc=poss?Math.round(s[0].possession/poss*100):50;
  const rows=[['Possession',pc+'%',(100-pc)+'%'],['Shots',s[0].shots,s[1].shots],['On target',s[0].onTarget,s[1].onTarget],['Passes',s[0].passes,s[1].passes],['Completed',s[0].complete,s[1].complete],['Tackles',s[0].tackles,s[1].tackles],['Corners',s[0].corners,s[1].corners],['Fouls',s[0].fouls,s[1].fouls],['Saves',s[0].saves,s[1].saves]];
  return rows.map(r=>'<div class="statrow"><b>'+r[1]+'</b><span>'+r[0]+'</span><b>'+r[2]+'</b></div>').join('');
 }
-function pause(){if(state!=='match')return;state='paused';clearInput();$('pause').classList.remove('hidden');$('pauseEyebrow').textContent=match.phase==='halftime'?'HALF TIME':'MATCH PAUSED';$('pauseTitle').textContent=match.phase==='halftime'?'A GAME OF TWO HALVES.':'TAKE A BREATHER.';$('resume').innerHTML=match.phase==='halftime'?'SECOND HALF <span>→</span>':'RESUME MATCH <span>→</span>';$('statHome').textContent=CLUBS[settings.home].abbr;$('statAway').textContent=CLUBS[settings.away].abbr;$('statScore').textContent=match.score.join(' — ');$('stats').innerHTML=statsHTML();$('resume').focus();}
+function pause(){if(state!=='match')return;syncTeamPermissions();state='paused';clearInput();$('pause').classList.remove('hidden');$('pauseEyebrow').textContent=match.phase==='halftime'?'HALF TIME':'MATCH PAUSED';$('pauseTitle').textContent=match.phase==='halftime'?'A GAME OF TWO HALVES.':'TAKE A BREATHER.';$('resume').innerHTML=match.phase==='halftime'?'SECOND HALF <span>→</span>':'RESUME MATCH <span>→</span>';$('statHome').textContent=CLUBS[settings.home].abbr;$('statAway').textContent=CLUBS[settings.away].abbr;$('statScore').textContent=match.score.join(' — ');$('stats').innerHTML=statsHTML();$('resume').focus();}
 function resume(){if(modal)return;if(match.phase==='halftime'){match.continueHalf();replayFrames=[];toast(chosenMode==='referee'?'SECOND HALF · TEAMS CHANGE ENDS':'SECOND HALF · YOU ATTACK ←');}state='match';$('pause').classList.add('hidden');clearInput();lastFrame=performance.now();audio.click();}
 function backMenu(){replayData=null;teamsChanged();showLobby('menu');}
 
-function result(){state='result';clearInput();$('result').classList.remove('hidden');$('hud').classList.add('hidden');$('refResults').classList.toggle('hidden',chosenMode!=='referee');$('resultMatch').classList.toggle('hidden',chosenMode==='referee');if(chosenMode==='referee')$('refResults').innerHTML=refResultHTML();for(const id of ['refHud','refIncident','refVar','varRestore','refCasebook'])$(id).classList.add('hidden');$('resultTitle').textContent=chosenMode==='referee'?'FINAL REFEREE ASSESSMENT':match.score[0]>match.score[1]?'THE NIGHT IS YOURS.':match.score[0]<match.score[1]?'A LESSON. A COMEBACK.':'HONOURS EVEN.';$('resultHome').textContent=CLUBS[settings.home].name.toUpperCase();$('resultAway').textContent=CLUBS[settings.away].name.toUpperCase();$('resultScore').textContent=match.score.join(' — ');$('resultStats').innerHTML=statsHTML();$('rematch').focus();}
-$('playGame').onclick=()=>beginTeamSelection('football');$('refereeMode').onclick=()=>beginTeamSelection('referee');$('confirmHome').onclick=confirmPlayer;$('confirmAway').onclick=confirmCpu;$('teamBack').onclick=()=>{if(teamStage==='cpu'){teamStage='player';renderTeams();$('confirmHome').focus();}else showLobby('menu');};$('prepBack').onclick=()=>{teamStage='cpu';showLobby('teams');};$('homeRoster').onclick=()=>{rosterSide=0;renderSetup();};$('awayRoster').onclick=()=>{rosterSide=1;renderSetup();};$('start').onclick=start;$('rematch').onclick=start;$('restartMatch').onclick=start;$('resume').onclick=resume;$('backMenu').onclick=backMenu;$('resultMenu').onclick=backMenu;
+function result(){state='result';clearInput();$('result').classList.remove('hidden');$('hud').classList.add('hidden');$('refResults').classList.toggle('hidden',chosenMode!=='referee');$('resultMatch').classList.toggle('hidden',chosenMode==='referee');if(chosenMode==='referee')$('refResults').innerHTML=refResultHTML();for(const id of ['refHud','refIncident','refVar','varRestore','refCasebook','teamManagement'])$(id).classList.add('hidden');$('resultTitle').textContent=chosenMode==='referee'?'FINAL REFEREE ASSESSMENT':match.score[0]>match.score[1]?'THE NIGHT IS YOURS.':match.score[0]<match.score[1]?'A LESSON. A COMEBACK.':'HONOURS EVEN.';$('resultHome').textContent=CLUBS[settings.home].name.toUpperCase();$('resultAway').textContent=CLUBS[settings.away].name.toUpperCase();$('resultScore').textContent=match.score.join(' — ');$('resultStats').innerHTML=statsHTML();$('rematch').focus();}
+$('playGame').onclick=()=>beginTeamSelection('football');$('refereeMode').onclick=()=>beginTeamSelection('referee');$('confirmHome').onclick=confirmPlayer;$('confirmAway').onclick=confirmCpu;$('teamBack').onclick=()=>{if(teamStage==='cpu'){teamStage='player';renderTeams();$('confirmHome').focus();}else showLobby('menu');};$('prepBack').onclick=()=>{teamStage='cpu';showLobby('teams');};$('homeRoster').onclick=()=>openTeamManagement(0);$('awayRoster').onclick=()=>openTeamManagement(1);$('prepFormation').onclick=()=>openTeamManagement(0);$('start').onclick=start;$('rematch').onclick=start;$('restartMatch').onclick=start;$('resume').onclick=resume;$('backMenu').onclick=backMenu;$('resultMenu').onclick=backMenu;
 $('showControls').onclick=() =>openModal('controls');$('pauseControls').onclick=()=>openModal('controls');$('showSettings').onclick=()=>openModal('settings');$('pauseSettings').onclick=()=>openModal('settings');$('closeControls').onclick=()=>closeModal('controls');$('closeSettings').onclick=()=>closeModal('settings');
-$('liveFormation').onchange=()=>{match.formation=$('liveFormation').value;settings.formation=match.formation;$('formation').value=match.formation;save();toast('FORMATION · '+match.formation);};$('liveTactic').onchange=()=>{match.tactic=$('liveTactic').value;toast('TEAM TACTIC · '+match.tactic.toUpperCase());};
+$('liveFormation').onchange=()=>{if(!canManageTeam(chosenMode,0)){$('liveFormation').value=match.formation;return;}match.formation=$('liveFormation').value;save();toast('FORMATION · '+match.formation);};$('liveTactic').onchange=()=>{if(!canManageTeam(chosenMode,0)){$('liveTactic').value=match.tactic;return;}match.tactic=$('liveTactic').value;toast('TEAM TACTIC · '+match.tactic.toUpperCase());};
+function beginMatchShot(){if(match.owner===match.selected&&['play','restart'].includes(match.phase)){shootCharge={time:0};$('power').classList.remove('hidden');}else match.command('shoot',aim());}
+function releaseMatchShot(cancel=false){if(!shootCharge)return;if(!cancel&&state==='match')match.command('shoot',aim(),Math.min(1,.13+shootCharge.time/.9));shootCharge=null;$('power').classList.add('hidden');}
+function cycleMatchCamera(){const cams=['broadcast','close','tele','wide'];settings.camera=cams[(cams.indexOf(settings.camera)+1)%cams.length];view.mode=settings.camera;$('camera').value=settings.camera;save();toast(settings.camera.toUpperCase()+' CAMERA');}
+function cycleMatchTactics(){if(!canManageTeam(chosenMode,0))return;const ts=['balanced','possession','direct','press'];match.tactic=ts[(ts.indexOf(match.tactic)+1)%4];$('liveTactic').value=match.tactic;toast('TEAM TACTIC · '+match.tactic.toUpperCase());}
 window.addEventListener('keydown',e=>{
  if(captureBindingKey(e))return;let code=e.code;
  if(state==='match'||state==='paused'){
@@ -1074,12 +1726,12 @@ window.addEventListener('keydown',e=>{
  if(code==='KeyF'&&!form){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.().catch(()=>toast('FULLSCREEN UNAVAILABLE'));else document.exitFullscreen?.();return;}
  if(state!=='match')return;keys[code]=true;if(chosenMode==='referee'){if(handleRefKey({code}))e.preventDefault();return;}const a=aim();
  if(code==='KeyJ')match.command('pass',a);if(code==='KeyI')match.command('through',a);if(code==='KeyL')match.command('lob',a);if(code==='KeyQ')match.command('switch');
- if(code==='KeyK'){if(match.owner===match.selected&&['play','restart'].includes(match.phase)){shootCharge={time:0};$('power').classList.remove('hidden');}else match.command('shoot',a);}
- if(code==='Space')match.command('skill',a);if(code==='KeyC'){const cams=['broadcast','close','tele','wide'];settings.camera=cams[(cams.indexOf(settings.camera)+1)%cams.length];view.mode=settings.camera;$('camera').value=settings.camera;save();toast(settings.camera.toUpperCase()+' CAMERA');}
- if(code==='KeyT'){const ts=['balanced','possession','direct','press'];match.tactic=ts[(ts.indexOf(match.tactic)+1)%4];$('liveTactic').value=match.tactic;toast('TEAM TACTIC · '+match.tactic.toUpperCase());}
+ if(code==='KeyK')beginMatchShot();
+ if(code==='Space')match.command('skill',a);if(code==='KeyC')cycleMatchCamera();
+ if(code==='KeyT')cycleMatchTactics();
  if(code==='F3'){showPerf=!showPerf;$('performance').classList.toggle('hidden',!showPerf);}
 });
-window.addEventListener('keyup',e=>{const code=bindings.keyup(e.code);if(!code)return;keys[code]=bindings.held(code);if(code==='KeyK'&&!keys[code]&&shootCharge){if(state==='match')match.command('shoot',aim(),Math.min(1,.13+shootCharge.time/.9));shootCharge=null;$('power').classList.add('hidden');}});
+window.addEventListener('keyup',e=>{const code=bindings.keyup(e.code);if(!code)return;keys[code]=bindings.held(code);if(code==='KeyK'&&!keys[code])releaseMatchShot();});
 window.addEventListener('blur',()=>{clearInput();if(state==='match')pause();});document.addEventListener('visibilitychange',()=>{if(document.hidden&&state==='match')pause();});
 window.addEventListener('resize',()=>view?.resize());document.addEventListener('renderlost',()=>{pause();toast('GRAPHICS CONTEXT LOST · RESTORING');});
 var radarCtx=$('radar').getContext('2d');
@@ -1094,22 +1746,22 @@ function hud(){
  else if(match.phase==='restart'){banner.classList.remove('hidden');$('phaseTitle').textContent=match.restart.kind;$('phaseHint').textContent=CLUBS[match.restart.team===0?settings.home:settings.away].name.toUpperCase()+(match.restart.team===0?' · '+bindings.label('pass')+' PASS / '+bindings.label('lob')+' CROSS / '+bindings.label('shoot')+' SHOOT':' · CPU TAKING RESTART');}
  else banner.classList.add('hidden');if(chosenMode==='referee'){if(match.phase==='kickoff')$('phaseHint').textContent='YOU ARE THE REFEREE · BOTH SIDES CPU';if(match.phase==='restart')$('phaseHint').textContent=CLUBS[match.restart.team===0?settings.home:settings.away].name.toUpperCase()+' · CPU TAKING RESTART';syncRefUi();}radar();if(showPerf)$('performance').textContent=Math.round(view.fps)+' FPS · '+view.renderer.info.render.calls+' DRAWS · '+(view.software?'SOFTWARE':view.quality.toUpperCase());
 }
-function snapshot(){return {players:match.players.map(p=>({x:p.x,z:p.z,fx:p.fx,fz:p.fz,vx:p.vx,vz:p.vz,phase:p.phase,holding:!!p.holding,act:p.act,slide:p.slide,dive:p.dive,anim:p.anim,sentOff:!!p.sentOff})),ball:{...match.ball},referee:{...match.referee}};}
-function handleEvents(){for(const e of match.events.splice(0)){if(chosenMode==='referee')handleRefEvent(e);
+function snapshot(){return {players:match.players.map(playerFrame),ball:{...match.ball},referee:{...match.referee}};}
+function handleEvents(){for(const e of match.events.splice(0)){handleTeamEvent(e);if(chosenMode==='referee')handleRefEvent(e);
  if(e.type==='kick')audio.kick(e.strength);if(e.type==='whistle')audio.whistle(e.text==='FULL TIME'?'triple':e.text==='HALF TIME'?'double':'single');if(e.type==='goal'){
   audio.cheer();audio.whistle();goalAge=0;replayData=chosenMode!=='referee'&&settings.replays&&replayFrames.length>15?replayFrames.slice():null;
-  $('event').classList.remove('hidden');const sc=e.scorer>=0?match.players[e.scorer]:null;$('event').querySelector('p').textContent=CLUBS[e.team===0?settings.home:settings.away].name.toUpperCase()+(sc?' · '+sc.name:'');
+  $('event').classList.remove('hidden');const sc=e.scorer>=0?match.players[e.scorer]:null;$('event').querySelector('p').textContent=CLUBS[e.team===0?settings.home:settings.away].name.toUpperCase()+(e.scorerName?' · '+e.scorerName:sc?' · '+sc.name:'');
  }if(e.type==='save'){audio.burst(.5,.3,1400);toast('KEEPER SAVE');}if(e.type==='post'){audio.tone(660,.5,.15,audio.fx,'triangle');toast('OFF THE WOODWORK');}if(e.type==='tackle')audio.burst(.1,.22,550);if(e.type==='foul'){toast('LATE CHALLENGE · YELLOW CARD');}
 }}
 function loop(now){
  const frameDelta=(now-lastFrame)/1000||1/60,dt=Math.min(.25,frameDelta);lastFrame=now;
- updateRefUiTime(dt);
+ updateRefUiTime(dt);syncMobileUI(dt);
  if(toastTimer>0){toastTimer-=dt;if(toastTimer<=0)$('toast').classList.add('hidden');}
  if(state==='match'){
   menuTime+=dt;$('hint').style.opacity=menuTime<12?'1':'0';
   if(shootCharge){shootCharge.time+=dt;$('power').firstElementChild.style.width=clamp(shootCharge.time/.9*100+13,0,100)+'%';$('power').firstElementChild.style.background=shootCharge.time>.75?'#efb957':'var(--lime)';}
-  const a=chosenMode==='referee'?refereeInput():{...aim(),sprint:keys.ShiftLeft||keys.ShiftRight,press:keys.KeyE,jockey:keys.Space};accum=stepMatchFrames(match,dt,a,accum);
-  handleEvents();
+  const touch=mobileMovement(),a=chosenMode==='referee'?refereeInput():{...aim(),sprint:keys.ShiftLeft||keys.ShiftRight||touch.sprint,press:keys.KeyE||touch.press,jockey:keys.Space||touch.jockey};accum=stepMatchFrames(match,dt,a,accum);
+  handleEvents();updateTeamUI(dt);
   if(match.phase==='play'){snapshotTick+=dt;if(snapshotTick>.1){snapshotTick=0;replayFrames.push(snapshot());if(replayFrames.length>45)replayFrames.shift();}replayData=null;$('replaytag').classList.add('hidden');$('event').classList.add('hidden');}
   if(match.phase==='goal'){goalAge+=dt;if(goalAge>1.3&&replayData){$('replaytag').classList.remove('hidden');$('event').classList.add('hidden');}}
   else if(match.phase!=='play'){$('event').classList.add('hidden');$('replaytag').classList.add('hidden');}
@@ -1117,10 +1769,10 @@ function loop(now){
  }
  const inMenu=['menu','teams','setup'].includes(state);let replay=null;if(state==='match'&&match.phase==='goal'&&replayData&&goalAge>1.3){const index=Math.min(replayData.length-1,Math.floor((goalAge-1.3)*10*.95));replay=replayData[index];}
  if(chosenMode==='referee'&&!inMenu&&match.phase==='var')replay=refReplayFrame(dt);
- view.render(match,dt,inMenu,replay);view.fps+=(1/Math.max(.001,frameDelta)-view.fps)*.03;hudTick+=dt;if(!inMenu&&hudTick>.09){hudTick=0;hud();}audio.update(inMenu,match);frameId=requestAnimationFrame(loop);
+ syncPhoneNotices(dt);view.render(match,dt,inMenu,replay);view.fps+=(1/Math.max(.001,frameDelta)-view.fps)*.03;hudTick+=dt;if(!inMenu&&hudTick>.09){hudTick=0;hud();}audio.update(inMenu,match);frameId=requestAnimationFrame(loop);
 }
 function fail(e){$('loader').classList.add('hidden');$('error').classList.remove('hidden');$('errorMessage').textContent='Enable hardware acceleration and open this file in a current Chrome, Edge, Firefox or Opera browser. '+(e?.message||'WebGL is required.');console.error(e);}
-installControlsUI();installRefereeUI();
+installControlsUI();installRefereeUI();installTeamUI();installMobileUI();
 try{
  match=makeMatch();const probe=document.createElement('canvas');let gl=null;try{gl=probe.getContext('webgl2')||probe.getContext('webgl');}catch(e){}if(gl){gl.getExtension('WEBGL_lose_context')?.loseContext();try{view=new FootballView($('game'),{quality:settings.quality});}catch(e){const fresh=$('game').cloneNode();$('game').replaceWith(fresh);view=new FootballCanvasView(fresh,{quality:settings.quality});}}else{view=new FootballCanvasView($('game'),{quality:settings.quality});$('stadium-label').textContent='NORTHLIGHT ARENA · SOFTWARE GRAPHICS';}teamsChanged();view.mode=settings.camera;applyAudio();$('loader').classList.add('hidden');requestAnimationFrame(loop);
 }catch(e){fail(e);}
